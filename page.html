@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assests/favicon2.svg">
-    <title>coursera</title>
+    <title>WebUi</title>
     <style>
         .bg {
             position: relative;
@@ -16,12 +16,12 @@
             content: '';
             inset: 0px;
             z-index: -1;
-            background-image: url(assests/bg.jpg);
+            background-image: url(assests/back.jpg);
             position: absolute;
             background-repeat: repeat;
             background-size: contain;
             background-color: azure;
-            opacity: 0.4;
+            opacity: 0.9;
 
         }
 
@@ -31,16 +31,27 @@
 
         }
 
-        header {
-            background-color: rgb(170, 197, 221);
-            border-color: black;
-            border-radius: 10px;
+        header {}
+
+        h1 {
+            margin-top: 80px;
+            font-size: 100px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 3px 3px gray
+        }
+
+        h3 {
+            margin-top: 30px;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+
         }
 
         .horinav {
-            border-style: solid;
-            border-radius: 5px;
-            background-color: inherit;
+
+
             text-align: right;
         }
 
@@ -51,6 +62,7 @@
         }
 
         .horinav li a {
+            color: aliceblue;
             display: inline-block;
             list-style-type: none;
             padding: 7px;
@@ -58,63 +70,77 @@
         }
 
         pre {
-            color: rgb(0, 0, 0);
-            font-size: 50px;
-            background-color: rgb(197, 174, 143);
-            width: 900px;
-            border-style: groove;
-            border-radius: 10px;
-            border-color: black;
-
-        }
-
-        .vernav {
-            background-color: rgb(164, 185, 185);
-            border-style: solid;
-            border-color: black;
-            padding: 5px;
-        }
-
-        .vernav li {
-
-            display: block;
-            list-style-type: none;
-            padding: 5px;
-        }
-
-        .vernav li a {
-            display: block;
-            border-style: solid;
-            border-color: black;
-            border-radius: 5px;
-            list-style-type: none;
-            padding: 5px;
-            text-decoration: none;
-        }
-
-        .css {
-            float: right;
-            clear: left;
-        }
-
-        h1 {
-
-            color: blue;
-            margin-top: 165px;
-            font-size: xx-large;
+            margin-left: 50px;
+            color: aliceblue;
+            font-size: 30px;
             font-family: cursive;
+        }
+
+        #design {
+            -webkit-box-reflect: below 3px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(10, 45, 0, 0.4));
+        }
+
+        #webui {
+            color: rgb(126, 127, 127);
+            font-size: 20px;
+            margin-left: 200px;
+        }
+
+
+        .student {
+
+            background-image: url(assests/book.jpg);
+            background-size: contain;
+            padding: 8px;
+            width: 15%;
+            height: 135px;
+            margin-left: 150px;
+            margin-top: 80px;
+            border-radius: 10px;
+        }
+
+        .teacher {
+
+            background-image: url(assests/te.jpg);
+            background-size: contain;
+            padding: 8px;
+            width: 15%;
+            height: 135px;
+            margin-left: 400px;
+            border-radius: 10px;
+        }
+
+        #one {
             text-align: center;
-            text-decoration: underline;
-
+            color: rgb(255, 255, 255);
         }
 
-        p {
+        #zero {
+            margin-left: 10px;
             color: rgb(0, 0, 0);
-            float: left;
-            font-size: x-large;
-            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
         }
-  
+
+        #two {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.616);
+
+        }
+
+        .trust {
+            margin-top: 100px;
+        }
+
+        #trustby {
+            color: #c9c9c9;
+            text-align: center;
+            font-size: larger;
+        }
+        #why{
+            color: rgb(255, 255, 255);
+            font-size: xx-large;
+         margin-left:560px;
+        }
     </style>
 </head>
 
@@ -124,11 +150,9 @@
         <div class="container">
             <!--horizontal navigation-->
             <header>
-                <img src="assests/education.png" height="40px" width="40px" style="float: left;">
+                <img src="assests/1.webp" height="70px" width="70px" style="float: left;margin-left:20px;">
                 <ul class="horinav">
-                    <li><a href="https://about.coursera.org/contact/">contact</a></li>
                     <li><a href="https://www.coursera.support/s/community?language=en_US">signup</a></li>
-                    <li><a href="https://www.coursera.org/career-academy/?trk_ref=globalnav">profile</a></li>
                     <li><a
                             href="https://www.coursera.org/?adgroupid=&adpostion=&authMode=login&campaignid=19193875347&creativeid=&device=c&devicemodel=&gclid=Cj0KCQiAxbefBhDfARIsAL4XLRq4GzkrAsk0l-3-UihagjsJfNJXfXquKFsWe6kCIxs1G6KrGcTMUc4aAq8FEALw_wcB&hide_mobile_promo&irclickid=xkfRiV1TkxyNUsaU9dVa21evUkA14C2QCUYsVY0&irgwc=1&keyword=&matchtype=&network=x&utm_campaign=B2C_INDIA_google-it-support_FTCOF_professional-certificates_PMax-arte-NRL_within_14D&utm_content=B2C&utm_medium=sem&utm_source=gg">login</a>
                     </li>
@@ -136,105 +160,54 @@
                 </ul>
             </header>
 
-            <img src="assests/ed.png" height="300px" width="300px" style="float:right;">
+            <img id="design" src="assests/2.avif" height="400px" width="400px"
+                style="float:right; margin-top:50px;margin-right:10px;">
+            <h1>WEBUI</h1>
+            <h3>The #1 Desining Upskilling Platform</h3>
             <pre>
-     LEARNING WITHOUT LIMITS </pre>
-            <ul class="vernav" style="float: left;">
-                <li><a href="#html">html</a></li>
-                <li><a href="#css">css</a></li>
-                <li><a href="#js">javascript</a></li>
-                <li><a href="#bs">bootstrap</a></li>
-                <li><a href="#react">react</a></li>
-            </ul>
-            <br>
-            <h1 id="html">HTML</h1>
-            <p>
-                <img src="https://assets.stickpng.com/thumbs/5847f5bdcef1014c0b5e489c.png" height="300px" width="300px"
-                    style="float:left;">
-                The HyperText Markup Language or HTML is the standard markup language for documents designed to be
-                displayed in a web browser.
-                It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
-                JavaScript.
-                Web browsers receive HTML documents from a web server or from local storage and render the documents
-                into multimedia web pages.
-                HTML describes the structure of a web page semantically and originally included cues for the appearance
-                of the document.
-                The HyperText Markup Language or HTML is the standard markup language for documents designed to be
-                displayed in a web browser.
-                It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
-                JavaScript.
-                Web browsers receive HTML documents from a web server or from local storage and render the documents
-                into multimedia web pages.
+                Createvity   Creates   Everything
+            </pre>
+            <pre id="webui">WebUi provides individuals the knowledge to 
+          improve the Web Desining capabilities.</pre>
 
-            </p>
+            <div class="student">
+                <h2 id="one">STUDENT</h1>
+                    <p1 id="zero">For Learning Purpose</p1>
+                    <h2 id="two"><a href="https://www.w3schools.com/" style="color: #ffffff;">Enroll for Free</a></h2>
+
+            </div>
+            <div class="teacher">
+                <h2 id="one">TEACHER</h1>
+                    <p1 id="zero">For Teaching Purpose</p1>
+                    <h2 id="two"><a href="https://www.w3schools.com/" style="color: #0d23cb;">Free Trail</a></h2>
+
+            </div>
+
+            <div class="trust">
+                <a href=https://www.intel.in/content/www/in/en/homepage.html>
+                    <img src="assests/intel.svg" style="margin-left: 260px;">
+                </a>
+                <a href="https://www.synack.com/">
+                    <img src="assests/synack-logo.svg">
+                </a>
+                <a href="https://github.com/Alwil17/AKERVA">
+                    <img src="assests/akerva-logo.svg">
+                </a>
+                <a href="https://www.ea.com/sports">
+                    <img src="assests/easports-logo.svg">
+                </a>
+            </div>
+            <h4 id="trustby">Trusted by the world’s most ambitious teams.</h4>
+            <img src="assests/1.webp" height="90px" width="90px" style="margin-left:600px;margin-top: 50px;">
+            <h5 id="why"> Why WebUi ?</h5>
+            <h4 id="trustby">Expertising Peoples as a Designers Since 2015</h4>
 
 
-            <h1 id="css">CSS</h1>
-            <p>
-                <img src="assests/css.png" height="300px" width="300px" style="float:right;">
-                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
-                document
-                written in a markup language such as HTML or XML
-                CSS is designed to enable the separation of content and presentation, including layout, colors, and
-                fonts.
-                The CSS specifications are maintained by the World Wide Web Consortium (W3C).
-                Internet media type (MIME type) text/css is registered for use with CSS by
-                RFC 2318 (March 1998).
-                CSS has a simple syntax and uses a number of English keywords to specify
-                the names of various style properties.
-                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
-                document
-                written in a markup language such as HTML or XML
-                CSS is designed to enable the separation of content and presentation, including layout, colors, and
-                fonts.
-                The CSS specifications are maintained by the World Wide Web Consortium (W3C).
-            </p>
-            <h1 id="js">JAVASCRIPT</h1>
-            <p>
-                <img src="https://img.icons8.com/arcade/2x/javascript.png" height="300px" width="300px"
-                    style="float:left;">
-                The first popular web browser with a graphical user interface, Mosaic, was released in 1993.
-                Accessible to non-technical people, it played a prominent role in the rapid growth of the nascent World
-                Wide Web.[11] The lead developers of Mosaic then founded the Netscape corporation, which released a more
-                polished browser, Netscape Navigator, in 1994. This quickly became the most-used.[12][13]
-                During these formative years of the Web, web pages could only be static, lacking the capability for
-                dynamic behavior after the page was loaded in the browser. There was a desire in the flourishing web
-                development scene to remove this limitation, so in 1995, Netscape decided to add a scripting language to
-                Navigator. They pursued two routes to achieve this: collaborating with Sun Microsystems to embed the
-                Java programming language, while also hiring Brendan Eich to embed the Scheme language
-            </p>
-            <h1 id="bs">BOOTSTRAP</h1>
-            <p>
-                <img src="https://icons.getbootstrap.com/assets/img/icons-hero@2x.png" height="300px" width="300px"
-                    style="float:right;">
-                Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development
-                of informative web pages (as opposed to web applications). The primary purpose of adding
-                it to a web project is to apply Bootstrap's choices of color, size, font and layout
-                to that project. As such, the primary factor is whether the developers in charge find
-                those choices to their liking. Once added to a project, Bootstrap provides basic style
-                definitions for all HTML elements. The result is a uniform appearance for prose, tables
-                and form elements across web browsers. In addition, developers can take advantage of CSS
-                classes defined in Bootstrap to further customize the appearance of their contents. For
-                example, Bootstrap has provisioned for light- and dark-colored tables
-                , page headings, more prominent pull quotes, and text with a highlight.
-            </p>
-            <h1 id="react">REACT</h1>
-            <p>
-                <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" height="300px" width="300px"
-                    style="float:left;">
-                React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript
-                library[3] for building user interfaces based on components. It is maintained by Meta
-                (formerly Facebook) and a community of individual developers and companies.[4][5][6]
-                React can be used as a base in the development of single-page, mobile, or server-rendered
-                applications with frameworks like Next.js. However, React is only concerned with the user
-                interface and rendering components to the DOM, so creating React applications usually requires
-                the use of additional libraries for routing, as well as certain client-side functionality
-            </p>
-            <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU" height="200px" width="400px"></iframe>
-            <iframe src="https://www.youtube.com/embed/Z4pCqK-V_Wo" height="200px" width="400px"></iframe>
-            <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" height="200px" width="400px"></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU" height="200px" width="400px"></iframe> -->
+            <!-- <iframe src="https://www.youtube.com/embed/Z4pCqK-V_Wo" height="200px" width="400px"></iframe> -->
+            <!-- <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" height="200px" width="400px"></iframe> -->
+
         </div>
-    </div>
 </body>
 
 </html>
