@@ -28,14 +28,17 @@
 
         }
 
+
         .container {
-            height: 2500px;
+            height: 3000px;
             border-style: double;
 
         }
 
+        #top:hover {
+            color: rgb(21, 119, 255);
+        }
 
-        header {}
 
         h1 {
             margin-top: 80px;
@@ -94,25 +97,44 @@
 
         .student {
 
-            background-image: url(assests/book.jpg);
-            background-size: contain;
+            position: relative;
             padding: 8px;
             width: 15%;
             height: 135px;
             margin-left: 150px;
             margin-top: 80px;
+
+        }
+
+        .student::before {
+            content: '';
+            inset: 0px;
+            z-index: -1;
+            background-image: url(assests/book.jpg);
+            position: absolute;
             border-radius: 10px;
+            background-size: contain;
+            opacity: 0.6;
         }
 
         .teacher {
-
-            background-image: url(assests/te.jpg);
-            background-size: contain;
+            position: relative;
             padding: 8px;
             width: 15%;
             height: 135px;
             margin-left: 400px;
+
+        }
+
+        .teacher::before {
             border-radius: 10px;
+            content: '';
+            inset: 0px;
+            z-index: -1;
+            background-image: url(assests/te.jpg);
+            position: absolute;
+            background-size: contain;
+            opacity: 0.6;
         }
 
         #one {
@@ -122,18 +144,20 @@
 
         #zero {
             margin-left: 10px;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             font-size: larger;
         }
 
         #two {
             text-align: center;
-            color: rgba(255, 255, 255, 0.616);
+            color: rgb(255, 255, 255);
 
         }
 
+
         #two:hover {
-            opacity: 0.5;
+            transform: scale(1.2);
+            color: rgb(0, 249, 166);
         }
 
         #hov:hover {
@@ -141,7 +165,7 @@
         }
 
         .trust {
-            margin-top: 100px;
+            margin-top: 400px;
         }
 
         #trustby {
@@ -153,26 +177,65 @@
         #why {
             color: rgb(255, 255, 255);
             font-size: xx-large;
-            margin-left: 560px;
+            margin-left: 530px;
+        }
+
+        #by {
+            color: rgb(255, 255, 255);
+            font-size: xx-large;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        #transform:hover {
+            transform: scale(1.2);
         }
 
         .use {
-            margin-top: 10px;
+            float: left;
             background-color: rgb(52, 50, 50);
             width: 250px;
-            height: 400px;
-            margin-left: 30px;
+            height: 360px;
+            margin-left: 50px;
             border-radius: 30px;
         }
+
 
         .game {
 
             background-color: rgb(52, 50, 50);
-            width: 250px;
-            height: 400px;
-            margin-left: 400px;
+            width: 265px;
+            height: 360px;
+            margin-left: 370px;
             margin-top: 10px;
             border-radius: 30px;
+        }
+
+        .wb {
+            float: right;
+            background-color: rgb(52, 50, 50);
+            width: 270px;
+            height: 360px;
+            margin-right: 30px;
+            border-radius: 30px;
+        }
+
+        #name { margin-top: 10px;
+            margin-left: 600px;
+            color: #00ff48;
+            font-size: xx-large;
+        }
+        #name1 {
+            margin-left: 600px;
+            color: #00d0ff;
+            font-size:large;
+        }
+        
+
+
+        #feedback {
+            color: #c9c9c9;
+            font-size: larger;
         }
     </style>
 </head>
@@ -186,11 +249,11 @@
 
                 <img src="assests/1.webp" height="70px" width="70px" style="float: left;margin-left:20px;">
                 <ul class="horinav">
-                    <li><a href="https://www.coursera.support/s/community?language=en_US">signup</a></li>
-                    <li><a
+                    <li><a id="top" href="https://www.coursera.support/s/community?language=en_US">signup</a></li>
+                    <li><a id="top"
                             href="https://www.coursera.org/?adgroupid=&adpostion=&authMode=login&campaignid=19193875347&creativeid=&device=c&devicemodel=&gclid=Cj0KCQiAxbefBhDfARIsAL4XLRq4GzkrAsk0l-3-UihagjsJfNJXfXquKFsWe6kCIxs1G6KrGcTMUc4aAq8FEALw_wcB&hide_mobile_promo&irclickid=xkfRiV1TkxyNUsaU9dVa21evUkA14C2QCUYsVY0&irgwc=1&keyword=&matchtype=&network=x&utm_campaign=B2C_INDIA_google-it-support_FTCOF_professional-certificates_PMax-arte-NRL_within_14D&utm_content=B2C&utm_medium=sem&utm_source=gg">login</a>
                     </li>
-                    <li><a href="https://www.coursera.org/browse">logout</a></li>
+                    <li><a id="top" href="https://www.coursera.org/browse">logout</a></li>
                 </ul>
             </header>
 
@@ -209,16 +272,51 @@
             <div class="student">
                 <h2 id="one">STUDENT</h1>
                     <p1 id="zero">For Learning Purpose</p1>
-                    <h2 id="two"><a href="https://www.w3schools.com/" style="color: #ffffff;">Enroll for Free</a></h2>
+                    <h2 id="two"><a id="two" href="https://www.w3schools.com/">Enroll for Free</a></h2>
 
             </div>
             <div class="teacher">
                 <h2 id="one">TEACHER</h1>
                     <p1 id="zero">For Teaching Purpose</p1>
-                    <h2 id="two"><a href="https://www.w3schools.com/" style="color: #0d23cb;">Free Trail</a></h2>
+                    <h2 id="two"><a id="two" href="https://www.w3schools.com/">Free Trail</a></h2>
 
             </div>
 
+
+            <img src="assests/1.webp" height="90px" width="90px" style="margin-left:580px;margin-top: 50px;">
+            <h5 id="why"> Why WebUi ?</h5>
+            <h4 id="trustby">Expertising Peoples as a Designers Since 2015</h4>
+
+            <div class="use">
+                <a href="https://webolutions.com/5-essential-elements-of-quality-web-design/">
+                    <img id="transform" src="assests/top.svg">
+                </a>
+                <h2 id="hov" style="color: #ffffff;margin-left:30px;">Top-quality content</h2>
+                <p id="hov" style="color: rgb(198, 202, 205);margin-left:20px;">Qualitied content for web design</p>
+            </div>
+            <div class="game">
+                <a
+                    href="https://www.wix.com/html5en/in-hiker-builder?utm_source=google&utm_medium=cpc&utm_campaign=18276155249^145848585518&experiment_id=build%20a%20website^p^643808234310^&gclid=CjwKCAiA0cyfBhBREiwAAtStHM9WLXkLzhBoiG2SzDBGTJT56JrKrSEe15-WQfsd-rkiEX2DYhBU6hoC5hcQAvD_BwE">
+                    <img id="transform" src="assests/game.svg">
+                </a>
+                <h2 id="hov" style="color: #ffffff;margin-left:85px;">Gamified</h2>
+                <p id="hov" style="color: rgb(198, 202, 205);margin-left:60px;">Learn by Fun & Playing</p>
+            </div><br>
+            <div class="wb">
+                <a href="https://www.thinkaec.com/7-rules-to-follow-when-designing-communities/">
+                    <img id="transform" src="assests/com.svg">
+                </a>
+                <h2 id="hov" style="color: #ffffff;margin-left:30px;">Desining Community</h2>
+                <p id="hov" style="color: rgb(198, 202, 205);margin-left:75px;">Anyone Can Learn</p>
+            </div>
+            <div class="wb">
+                <a href="https://webdesigner.withgoogle.com/">
+                    <img id="transform" src="assests/open.png"
+                        style="height:180px;width:180px;margin-top: 50px;margin-left:45px;">
+                </a>
+                <h2 id="hov" style="color: #ffffff;margin-left:68px;margin-top:50px;">Open Source</h2>
+                <p id="hov" style="color: rgb(198, 202, 205);margin-left:70px;">Anyone Can Access</p>
+            </div><br><br>
             <div class="trust">
                 <a href=https://www.intel.in/content/www/in/en/homepage.html>
                     <img id="hov" src="assests/intel.svg" style="margin-left: 260px;">
@@ -234,28 +332,16 @@
                 </a>
             </div>
             <h4 id="trustby">Trusted by the world’s most ambitious teams.</h4>
-            <img src="assests/1.webp" height="90px" width="90px" style="margin-left:600px;margin-top: 50px;">
-            <h5 id="why"> Why WebUi ?</h5>
-            <h4 id="trustby">Expertising Peoples as a Designers Since 2015</h4>
-
-            <div class="use">
-                <a href="https://webolutions.com/5-essential-elements-of-quality-web-design/">
-                    <img id="hov" src="assests/top.svg">
-                </a>
-                <h2 id="hov" style="color: #ffffff;margin-left:30px;">Top-quality content</h2>
-                <p id="hov" style="color: rgb(198, 202, 205);margin-left:20px;">Qualitied content for web design</p>
-            </div>
-            <div class="game">
-                <a href="https://webolutions.com/5-essential-elements-of-quality-web-design/">
-                    <img id="hov" src="assests/top.svg">
-                </a>
-                <h2 id="hov" style="color: #ffffff;margin-left:30px;">Top-quality content</h2>
-                <p id="hov" style="color: rgb(198, 202, 205);margin-left:20px;">Qualitied content for web design</p>
-            </div>
-
-
-
-
+            <img src="assests/1.webp" height="90px" width="90px" style="margin-left:580px;margin-top: 50px;">
+            <h5 id="by">Trusted by millions of entrepreneurs and creatives</h5>
+            <br>
+            <img src="assests/ben.jpg" height="350px" width="350px" style="float: left;margin-left:100px;border-radius:300px;">
+            <h6 id="name">Ben Keene</h6>
+            <h6 id="name1">Founder, Tribewanted</h6>
+            <pre id="feedback">              "Within an hour, we had probably our best landing 
+                page yet and for a fraction of the price. It's amazing. 
+                Since then, I've built about 15 sites on WebUi
+                 it's currently my favorite startup tech tool.</pre>
             <!-- <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU" height="200px" width="400px"></iframe> -->
             <!-- <iframe src="https://www.youtube.com/embed/Z4pCqK-V_Wo" height="200px" width="400px"></iframe> -->
             <!-- <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" height="200px" width="400px"></iframe> -->
