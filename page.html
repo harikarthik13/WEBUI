@@ -30,7 +30,7 @@
 
 
         .container {
-            height: 4500px;
+            height: 4700px;
             border-style: double;
 
         }
@@ -291,35 +291,11 @@
             border-radius: 10px;
         }
 
-        table {
-            width: 35%;
-            float: left;
-            clear: right;
-        }
-
-        th {
-
-            padding: 10px;
-            font-size: xx-large;
+        #copy {
+            margin-top: 100px;
+            font-size: x-large;
+            text-align: center;
             color: #ffffff;
-        }
-
-        td {
-
-            padding: 10px;
-            font-size: larger;
-            color: #afaeae;
-        }
-
-        #heading {
-            margin-left: 200px;
-        }
-
-        #data {
-            margin-left: 600px;
-        }
-        #copy{
-
         }
     </style>
 </head>
@@ -433,7 +409,7 @@
                 <img src="assests/kamova.jpg" height="350px" width="350px"
                     style="float:right;margin-right:100px;border-radius:300px;">
                 <h6 id="name" style="margin-right: 50px; margin-top: 30px;">Tsveti Kamova</h6>
-                <h6 id="name1">Owner, Red Paper Plane</h6>
+                <h6 id="name1" style="margin-left:550px;">Owner, Red Paper Plane</h6>
                 <pre id="feedback">                 "We chose WebUi from the very beginning of our project
                   aiming at simplicity and style. Now as our project is growing, 
                   we are very happy to see that our favorite platform is enriching 
@@ -455,34 +431,62 @@
                 style="margin-left:100px; margin-right:100px;border:2px solid;border-color: rgb(15, 173, 49);border-radius: 10px;">
 
             <img src="assests/1.webp" height="70px" width="70px" style="margin-left:600px;">
+            <br>
 
-            <table>
-                <tr id="heading">
-                    <th>Contact </th>
-                    <th>Partners</th>
-                    <th>Help & Support </th>
-                </tr>
-                <tr id="data">
-                    <td><a href="https://www.facebook.com/" style="color:inherit;">facebook</a></td>
-                    <td><a href="https://www.facebook.com/" style="color:inherit;">DesiningUi</a></td>
-                    <td><a href="https://www.xz@gmail.com/" style="color:inherit;">xyz@gmail.com</a></td>
+            <div style="display: flex;">
+                <div class="footfont" style="margin-left: 300px;">
+                    <h5 style="color: #ffffff;font-size:xx-large;">Contact</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" style="color: #afaeae;font-size: larger;">facebook</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" style="color: #afaeae;font-size: larger;">instagram</a>
+                        </li>
+                        <li><a href="https://twitter.com/login?lang=en"
+                                style="color: #afaeae;font-size: larger;">twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footfont" style="margin-left: 100px;">
+                    <h5 style="text-align: left; color: #ffffff;font-size:xx-large;">Partners</h5>
+                    <ul>
+                        <li><a href="https://xd.adobe.com/ideas/principles/web-design/web-page-design/"
+                                style="color: #afaeae;font-size: larger;">DesignUi</a></li>
+                        <li><a href="https://www.wix.com/blog/2020/05/how-to-design-a-website"
+                                style="color: #afaeae;font-size: larger;">HelloUi</a></li>
+                        <li><a href="https://www.wix.com/blog/2020/05/how-to-design-a-website/"
+                                style="color: #afaeae;font-size: larger;">HiUi</a></li>
+                    </ul>
+                </div>
 
-                </tr>
-                <tr id="data">
-                    <td><a href="https://www.instagram.com/" style="color:inherit;">instagram</a></td>
-                    <td><a href="https://www.wix.com/blog/2020/05/how-to-design-a-website/"
-                            style="color:inherit;">HelloUi</a></td>
-                    <td><a href="https://www.knowledge.com/" style="color:inherit;">knowledgebase</a></td>
+                <div class="footfont" style="margin-left:100px;">
+                    <h5 style="text-align: left;color: #ffffff;font-size:xx-large; ">Help & Support</h5>
+                    <ul>
+                        <li><a href="https://www.xz@gmail.com/"
+                                style="color: #afaeae;font-size: larger;">xyz@gmail.com</a></li>
+                        <li><a href="https://www.helpkit.com/" style="color: #afaeae;font-size: larger;">HelpKit</a>
+                        </li>
+                        <li><a href="https://www.knowledge.com/"
+                                style="color: #afaeae;font-size: larger;">knowledgebase</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con" style="margin-top: 100px;">
+                <a
+                    href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
+                    <img id="hov" src="assests/twitter.avif" style="margin-left: 330px;height: 50px; height: 50px;">
+                </a>
+                <a href="https://www.whatsapp.com/">
+                    <img id="hov" src="assests/whatsapp.svg" style=" margin-left: 100px;height: 50px; height: 50px;">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="hov" src="assests/Instagram.svg" style=" margin-left: 100px;height: 55px; height: 55px;">
+                </a>
+                <a href="https://in.linkedin.com/">
+                    <img id="hov" src="assests/linkedin.svg" style=" margin-left: 100px;height: 50px; height: 50px;">
+                </a>
+            </div>
 
-                </tr>
-                <tr id="data">
-                    <td><a href="https://twitter.com/login?lang=en" style="color:inherit;">twitter</a></td>
-                    <td><a href="https://www.wix.com/blog/2020/05/how-to-design-a-website/"
-                            style="color:inherit;">HiUi</a></td>
-                    <td><a href="https://www.helpkit.com/" style="color:inherit;">Helpkit</a></td>
 
-                </tr>
-                <p id="copy">&#169  2023 WebUi Ltd.</p>
+            <p id="copy">&#169 2023 WebUi Ltd.</p>
         </div>
 </body>
 
