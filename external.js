@@ -79,3 +79,6 @@ alert('INVALID')
     }
 
 }
+function form(){
+    var a=document.getElementById('name').value;
+}
