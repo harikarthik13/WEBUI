@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate() {
+            var name = document.validation.un.value;
+            var pass = document.validation.pw.value;
+            var confirm = document.validation.cpw.value;
+
+            var ncheck = /^[A-Za-z' ']+$/;
+             var pwcheck =  /^[A-Za-z0-9[#?!@$%^&*]]\w{8,15}$/;                                
+             ///^A-Za-z0-9#?!@$%^&*-w{8,15}+$/;
+          
+
+            if (name == '') {
+                alert('Please enter your name');
+            }
+            else if (!ncheck.test(name)) {
+                alert("Enter valid user name");
+            }
+             else if (pass == '') {
+                 alert('Please enter password');
+            }
+             else if (!pwcheck.test(pass)) {
+                 alert('Enter valid password');
+             }
+             else if (pass != confirm) {
+                 alert('Password not Matched');
+             }
+            else {
+                alert('Thanks for login!!!');
+                window.location = "http://127.0.0.1:5500/assests/jsformvalidate2.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="jsformvalidate2.html" name="validation" method="post"
+        onsubmit="validate()">
+        <fieldset>
+            <legend style="text-align: center;">Validation Form</legend>
+            <label>User Name :</label>
+            <input type="text" name="un" placeholder=" enter username">
+            <br><br>
+            <label>Password :</label>
+            <input type="password" name="pw" placeholder="enter  password">
+            <br><br>
+            <label> Confirm Password :</label>
+            <input type="password" name="cpw" placeholder="enter  password">
+            <br><br>
+            <button type="submit">Next</button>
+            <input type="reset" value="Clear Form" class="button" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
