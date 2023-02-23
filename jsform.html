@@ -5,23 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    form {
+        margin: auto;
+        background-image: url("assests/form1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        background-size: cover;
+        padding: 30px;
+        ;
+    }
+</style>
+<script>
+    function form(register){
+    var a=document.register.element["name"].value;
+    document.write(a);
+    var a=document.register.element["mail"].value;
+    document.write(b);
+
+}
+
+</script>
 </head>
 <body>
-    <script src="external.js"></script>
-    <form action="" method="post">
+    
+    <form action=" " name="register" method="post" onsubmit="form(register)" >
         <fieldset>
             <legend style="text-align: center;">REGISTRATION FORM</legend>
             <label>USERNAME :</label>
-            <input type="text" id="name" placeholder="name" required>
+            <input type="text" name="name" placeholder="name" required>
             <br>
             <br>
-            <!-- <label>E-MAIL :</label>
+            <label>E-MAIL :</label>
             <input type="email" name="mail" placeholder="xyz@gmail.com" required>
             <br><br>
             <label>PASSWORD :</label>
             <input type="password" name="password" placeholder="xxxxxxxx" required>
+            <br><br>
+            <!-- <input type="checkbox" name="password" value="yes"><label>REMEMBER PASSWORD</label></input>
+            <br><br>
+            <label>GENDER :</label>
+            <input type="radio" id="gender" name="gender" value="male">MALE</input>
+            <input type="radio" id="gender" name="gender" value="female">FEMALE</input>
+            <br><br>
+            <label>ADDRESS :</label>
+            <textarea></textarea>
+            <br><br>
+
+            <label>DATE OF BIRTH :</label>
+            <input type="datetime-local">SELECT DATE AND TIME</input>
+            <br><br>
+            <label>Mobile Number :</label>
+            <input type="tel" pattern="[0-9]{10}" name="mno" placeholder="xxxxxxxxxx" required>
+            <br><br>
+            <label>TELEPHONE NUMBER :</label>
+            <input type="tel" pattern="[0-3]{3}-[0-4]{4}-[0-3]{3}" name="teleno">
+            <br><br>
+            <label>PROFFESSION</label><br>
+            <select name="PROFFESSION">
+                <optgroup label="IT">
+                    <option>WEB DESIGNER</option>
+                    <option>SOFTWARE DEVELOPER</option>
+                    <option>FULL-STACK</option>
+                </optgroup>
+                <OPTgroup label="NON-IT">
+                    <option>DOCTOR</option>
+                    <option>PILOT</option>
+                    <option>ADVOCATE</option>
+                </OPTgroup>
+            </select>
             <br><br> -->
-            <input type="button" onclick="form()" value="Click to print">
+            <button type="submit" style="margin-left:  550px;">Get your Response</button>
 
         </fieldset>
 
