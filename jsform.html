@@ -18,19 +18,34 @@
     }
 </style>
 <script>
-    function form(register){
-    var a=document.register.element["name"].value;
-    document.write(a);
-    var a=document.register.element["mail"].value;
-    document.write(b);
-
+    function form(){
+    var a=document.register.name.value;   
+    var b=document.register.mail.value;
+    var c=document.register.password.value;
+    var d=document.register.pass.value;
+    var e=document.register.gender.value;
+    var f=document.register.address.value;
+    var g=document.register.dob.value;
+    var h=document.register.mno.value;
+    var i=document.register.teleno.value;
+    var j=document.register.pro.value;
+    document.write( 'Name: ' +" "+ a +"<br>");
+    document.write('E-mail: ' +" "+ b +"<br>");
+    document.write('Password: ' +" "+ c +"<br>");
+    document.write('Confirmation: ' +" "+ d +"<br>");
+    document.write('Gender: ' +" "+ e +"<br>");
+    document.write('Adress: ' +" "+ f  +"<br>");
+    document.write('Date of Birth: ' +" "+ g +"<br>");
+    document.write('Mobile Number : ' +" "+ h +"<br>");
+    document.write('Telephone Number : ' +" "+ i +"<br>");
+    document.write('Profession : ' +" "+ j +"<br>");
 }
 
 </script>
 </head>
 <body>
     
-    <form action=" " name="register" method="post" onsubmit="form(register)" >
+    <form action=" " name="register" method="post" onsubmit="form()" >
         <fieldset>
             <legend style="text-align: center;">REGISTRATION FORM</legend>
             <label>USERNAME :</label>
@@ -42,19 +57,19 @@
             <br><br>
             <label>PASSWORD :</label>
             <input type="password" name="password" placeholder="xxxxxxxx" required>
-            <br><br>
-            <!-- <input type="checkbox" name="password" value="yes"><label>REMEMBER PASSWORD</label></input>
+            <br><br> 
+            <input type="checkbox" name="pass" value="yes"><label>REMEMBER PASSWORD</label></input>
             <br><br>
             <label>GENDER :</label>
             <input type="radio" id="gender" name="gender" value="male">MALE</input>
             <input type="radio" id="gender" name="gender" value="female">FEMALE</input>
             <br><br>
             <label>ADDRESS :</label>
-            <textarea></textarea>
+            <textarea name="address"></textarea>
             <br><br>
 
             <label>DATE OF BIRTH :</label>
-            <input type="datetime-local">SELECT DATE AND TIME</input>
+            <input type="datetime-local" name="dob">SELECT DATE AND TIME</input>
             <br><br>
             <label>Mobile Number :</label>
             <input type="tel" pattern="[0-9]{10}" name="mno" placeholder="xxxxxxxxxx" required>
@@ -63,7 +78,7 @@
             <input type="tel" pattern="[0-3]{3}-[0-4]{4}-[0-3]{3}" name="teleno">
             <br><br>
             <label>PROFFESSION</label><br>
-            <select name="PROFFESSION">
+            <select name="pro">
                 <optgroup label="IT">
                     <option>WEB DESIGNER</option>
                     <option>SOFTWARE DEVELOPER</option>
@@ -75,7 +90,7 @@
                     <option>ADVOCATE</option>
                 </OPTgroup>
             </select>
-            <br><br> -->
+            <br><br>
             <button type="submit" style="margin-left:  550px;">Get your Response</button>
 
         </fieldset>
@@ -84,4 +99,4 @@
 
     </form>
 </body>
-</html>
+</html> 
