@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script>
+        function checking() {
+            var fname = document.check.fn.value;
+            var lname = document.check.ln.value;
+            var dateofbirth = document.check.dob.value;
+           // var gender = document.check.gen.value;
+
+            if (fname == '') {
+                alert('Enter firts name');
+            }
+            else if (lname == '') {
+                alert('Enter last name');
+            }
+            else if (dateofbirth == '') {
+                alert('Enter Date of Birth');
+            }
+            // else if (gender == '') {
+            //     alert('Enter Gender');
+            // }
+            else{
+            var d1 = new Date(dob);
+            var d2 = new Date();
+            var diff = d2.getTime() - d1.getTime();     
+            var daydiff = (diff / 31536000000).toFixed(0);
+            alert("Difference in time:" + diff + "</br>");
+            alert(" Total numbers of years since <b>"+ dob +" </b> is: <b> " + daydiff + " years </b>");
+            }
+        }
+    </script>
 </head>
+
 <body>
     <form action="" name="check" method="post" onsubmit="checking()">
-<fieldset>
-    <legend style="text-align: center;">Candidate Registration</legend>
-    <label>First Name :</label>
-    <input type="text" name="fn" placeholder="first name"><br><br>
-    <label>Last Name :</label>
-    <input type="text" name="ln" placeholder="last name"><br><br>
-    <label>Date of Birth :</label>
+        <fieldset>
+            <legend style="text-align: center;">Candidate Registration</legend>
+            <label>First Name :</label>
+            <input type="text" name="fn" placeholder="first name"><br><br>
+            <label>Last Name :</label>
+            <input type="text" name="ln" placeholder="last name"><br><br>
+            <label>Date of Birth :</label>
             <input type="text" name="dob" placeholder="date of birth">
             <br><br>
-            <label >Gender :</label>
+            <label>Gender :</label>
             <input type="radio" name="gen " value="male">Male</input>
             <input type="radio" name="gen " value="Female">Female</input>
-</fieldset>
+            <button type="submit">Register</button>
+        </fieldset>
     </form>
 </body>
-</html>
 
+</html>
