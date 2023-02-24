@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const friendsname = ['Hari','vasanth','vikram' ];
+        function push(){
+    let frnd1 = document.friends.fname.value;
+    friendsname.push(frnd1);
+    alert(friendsname);
+        }
+        function unshift(){
+    let frnd1 = document.friends.fname.value;
+    friendsname.unshift(frnd1);
+    alert(friendsname);
+        }
+        function shift(){
+    let frnd1 = document.friends.fname.value;
+    friendsname.shift(frnd1);
+    alert(friendsname);
+        }
+        function pop(){
+    let frnd1 = document.friends.fname.value;
+    friendsname.pop(frnd1);
+    alert(friendsname);
+        }
+    </script>
+</head>
+<body>
+    <form action=" " name="friends" method="post">
+        <fieldset>
+            <legend style="text-align: center;">Friend Form</legend>
+            <label> Name :</label>
+            <input type="text" name="fname" placeholder=" Enter name">
+            <br><br>
+            <input type="button" onclick="push()" value="Add in last" >
+            <input type="button" onclick="unshift()" value="Add in front" >
+            <input type="button" onclick="shift()" value="Delete in front" >
+            <input type="button" onclick="pop()" value="Delete in last" >
+</body>
+</html>

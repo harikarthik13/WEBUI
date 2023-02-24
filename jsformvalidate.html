@@ -13,9 +13,7 @@
             var confirm = document.validation.cpw.value;
 
             var ncheck = /^[A-Za-z' ']+$/;
-             var pwcheck =  /^[A-Za-z0-9[#?!@$%^&*]]\w{8,15}$/;                                
-             ///^A-Za-z0-9#?!@$%^&*-w{8,15}+$/;
-          
+            var pwcheck = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
 
             if (name == '') {
                 alert('Please enter your name');
@@ -23,26 +21,33 @@
             else if (!ncheck.test(name)) {
                 alert("Enter valid user name");
             }
-             else if (pass == '') {
-                 alert('Please enter password');
+            else if (pass == '') {
+                alert('Please enter password');
             }
-             else if (!pwcheck.test(pass)) {
-                 alert('Enter valid password');
-             }
-             else if (pass != confirm) {
-                 alert('Password not Matched');
-             }
+            else if (!pwcheck.test(pass)) {
+                alert('Enter valid password');
+            }
+            else if (pass != confirm) {
+                alert('Password not Matched');
+            }
+            else if (pass.length < 8) {
+                alert('Enter atleast 8 characters');
+            }
+            else if (pass.length > 15) {
+                alert('Enter within 15 characters');
+            }
             else {
                 alert('Thanks for login!!!');
-                window.location = "http://127.0.0.1:5500/assests/jsformvalidate2.html";
+               
+                window.location.href = "http://127.0.0.1:5500/jssecondpage.html" ;
+               // Response.redirect(`http://127.0.0.1:5500/jssecondpage.html`);
             }
         }
     </script>
 </head>
 
 <body>
-    <form action="jsformvalidate2.html" name="validation" method="post"
-        onsubmit="validate()">
+    <form action=" " name="validation" method="post" onsubmit="validate()">
         <fieldset>
             <legend style="text-align: center;">Validation Form</legend>
             <label>User Name :</label>
