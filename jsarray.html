@@ -1,44 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        const friendsname = ['Hari','vasanth','vikram' ];
-        function push(){
-    let frnd1 = document.friends.fname.value;
-    friendsname.push(frnd1);
-    alert(friendsname);
+        const friendsname = ['vasanth', 'vikram', 'hari'];
+        function push() {
+            let frnd1 = document.friends.fname.value;
+            friendsname.push(frnd1);
+            alert(friendsname);
         }
-        function unshift(){
-    let frnd1 = document.friends.fname.value;
-    friendsname.unshift(frnd1);
-    alert(friendsname);
+        function unshift() {
+            let frnd1 = document.friends.fname.value;
+            friendsname.unshift(frnd1);
+            alert(friendsname);
         }
-        function shift(){
-    let frnd1 = document.friends.fname.value;
-    friendsname.shift(frnd1);
-    alert(friendsname);
+        function shift() {
+            friendsname.shift();
+            alert(friendsname);
         }
-        function pop(){
-    let frnd1 = document.friends.fname.value;
-    friendsname.pop(frnd1);
-    alert(friendsname);
+        function pop() {
+            friendsname.pop();
+            alert(friendsname);
+        }
+        function sort() {
+            alert(friendsname.sort());
+        }
+        function forprint() {
+            for (var i = 0; i < friendsname.length; i++) {
+                document.write(friendsname[i] + '<br>')
+            }
+        }
+        function foreachprint() {
+            friendsname.forEach(function (friend) {
+                document.write(friend + "<br>");
+            });
+        }
+
+        function forofprint() {
+            for (var friend of friendsname) {
+                document.write(friend + "<br>");
+            }
+        }
+        function forinprint() {
+            for (var i in friendsname) {
+                document.write("friendsname [ " + (i) + " ] " + friendsname[i] + "<br>");
+            }
+        }
+        function commaprint() {
+            for (var i = 0; i < friendsname.length; i++) {
+                document.write(friendsname[i] + ',')
+            }
+        }
+        function date() {
+            let date = new Date();
+            let today = date.getDate();
+            let month = date.getMonth() + 1;
+            let year = date.getFullYear();
+            alert(today + "/" + month + "/" + year);
+        }
+        function time() {
+            let date = new Date();
+            let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+            alert(time);
         }
     </script>
 </head>
+
 <body>
     <form action=" " name="friends" method="post">
         <fieldset>
             <legend style="text-align: center;">Friend Form</legend>
-            <label> Name :</label>
+            <label> <b>Name :</b></label>
             <input type="text" name="fname" placeholder=" Enter name">
             <br><br>
-            <input type="button" onclick="push()" value="Add in last" >
-            <input type="button" onclick="unshift()" value="Add in front" >
-            <input type="button" onclick="shift()" value="Delete in front" >
-            <input type="button" onclick="pop()" value="Delete in last" >
+            <input type="button" onclick="push()" value="Add in last">
+            <input type="button" onclick="unshift()" value="Add in front">
+            <input type="button" onclick="shift()" value="Delete in front">
+            <input type="button" onclick="pop()" value="Delete in last">
+            <input type="button" onclick="sort()" value="click to sort"><br><br>
+            <input type="button" onclick="forprint()" value="for print">
+            <input type="button" onclick="foreachprint()" value="forEach print">
+            <input type="button" onclick="forofprint()" value="forof print">
+            <input type="button" onclick="forinprint()" value="forin print">
+            <input type="button" onclick="commaprint()" value="print with comma">
+            <input type="button" onclick="date()" value="Current Date ">
+            <input type="button" onclick="time()" value="Current Time ">
 </body>
+
 </html>
