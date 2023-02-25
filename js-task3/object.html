@@ -35,8 +35,13 @@
                 this.age = age;
                 this.gender = gender;
                 this.address = address;
+                if (this.constructor === Person) {
+                    throw new Error("You can not create  an instance for the abstarct class.");
+                }
             }
-
+            display() {
+                throw new Error("Abstract class doesn't have any implementation");
+            }
         }
         class Member extends Person {
             constructor(name, age, gender, address, emp_code, department, designation, salary) {
