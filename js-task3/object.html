@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 id="print" style="margin-left: 100px; margin-top: 50px;"></h1>
+    <script>
+        function person(name, age, gender, address) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.address = address;
+
+        }
+        var per = new person("Hari", 20, "Male", "MJ sargunam colony Navaindia Coimbatore");
+
+        function display() {
+            document.getElementById("print").innerHTML = (per.name + ", " + per.age + ", " + per.gender + ", " + per.address);
+        }
+        display();
+    </script>
+
+    <h4 id="priclass"  style="margin-left: 100px; margin-top: 50px;"></h4>
+    <script>
+        class Person {
+            constructor(name, age, gender, address) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+            }
+
+        }
+        class Member extends Person {
+            constructor(name, age, gender, address, emp_code, department, designation, salary) {
+                super(name, age, gender, address);
+                this.emp_code = emp_code;
+                this.department = department;
+                this.designation = designation;
+                this.salary = salary;
+            }
+
+
+            display() {
+                document.getElementById("priclass").innerHTML = (mem.name + ", " + mem.age + ", " + mem.gender + ", " +
+                    mem.address + ", " + mem.emp_code + ", " + mem.department + ", " + mem.designation + ", " + mem.salary);
+
+            }
+        }
+       var  mem = new Member('Hari', 20, 'Male', 'Coimbatore India', "001", 'Software', 'HR', 150000);
+        mem.display();
+    </script>
+
+
+</body>
+
+</html>
