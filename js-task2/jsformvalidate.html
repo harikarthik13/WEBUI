@@ -38,16 +38,16 @@
             }
             else {
                 alert('Thanks for login!!!');
-               
-                window.location.href = "http://127.0.0.1:5500/jssecondpage.html" ;
-               // Response.redirect(`http://127.0.0.1:5500/jssecondpage.html`);
+                window.location="http://127.0.0.1:5500/jssecondpage.html";
+
+              
             }
         }
     </script>
 </head>
 
 <body>
-    <form action=" " name="validation" method="post" onsubmit="validate()">
+    <form action="" name="validation" method="post">
         <fieldset>
             <legend style="text-align: center;">Validation Form</legend>
             <label>User Name :</label>
@@ -59,8 +59,8 @@
             <label> Confirm Password :</label>
             <input type="password" name="cpw" placeholder="enter  password">
             <br><br>
-            <button type="submit">Next</button>
-            <input type="reset" value="Clear Form" class="button" />
+            <input type="button" onclick="validate()" value="Next">
+            <input type="reset" value="Clear Form" class="button">
         </fieldset>
     </form>
 </body>

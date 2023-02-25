@@ -11,7 +11,7 @@
             var fname = document.check.fn.value;
             var lname = document.check.ln.value;
             var dateofbirth = document.check.dob.value;
-           // var gender = document.check.gen.value;
+            var birthcheck =  /^\d{1,2}\/\d{1,2}\/\d{4}$/;
 
             if (fname == '') {
                 alert('Enter firts name');
@@ -22,23 +22,30 @@
             else if (dateofbirth == '') {
                 alert('Enter Date of Birth');
             }
-            // else if (gender == '') {
-            //     alert('Enter Gender');
-            // }
-            else{
-            var d1 = new Date(dob);
-            var d2 = new Date();
-            var diff = d2.getTime() - d1.getTime();     
-            var daydiff = (diff / 31536000000).toFixed(0);
-            alert("Difference in time:" + diff + "</br>");
-            alert(" Total numbers of years since <b>"+ dob +" </b> is: <b> " + daydiff + " years </b>");
+            else if (!birthcheck.test(dateofbirth)) {
+                alert("Invalid date of birth format");
+
+            }
+
+            else {
+                var d1 = new Date(dateofbirth);
+                var diff = Date.now() - d1.getTime();
+                var daydiff = (diff / 31536000000).toFixed(0);
+                alert(daydiff);
+
+                if (daydiff > 18) {
+                    alert(fname + " " + lname + " " + "is able to vote this year");
+                }
+                else {
+                    alert(fname + " " + lname + " " + "is not able to vote this year");
+                }
             }
         }
     </script>
 </head>
 
 <body>
-    <form action="" name="check" method="post" onsubmit="checking()">
+    <form action="" name="check" method="post">
         <fieldset>
             <legend style="text-align: center;">Candidate Registration</legend>
             <label>First Name :</label>
@@ -46,12 +53,12 @@
             <label>Last Name :</label>
             <input type="text" name="ln" placeholder="last name"><br><br>
             <label>Date of Birth :</label>
-            <input type="text" name="dob" placeholder="date of birth">
+            <input type="text" id="dob" placeholder="date of birth">
             <br><br>
             <label>Gender :</label>
             <input type="radio" name="gen " value="male">Male</input>
             <input type="radio" name="gen " value="Female">Female</input>
-            <button type="submit">Register</button>
+            <input type="button" onclick="checking()" value="Register">
         </fieldset>
     </form>
 </body>
