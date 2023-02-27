@@ -42,7 +42,7 @@
             content: '';
             inset: 0px;
 
-            background-image: url(psdlayers/man.png);
+            /* background-image: url(psdlayers/man.png); */
             position: absolute;
             background-repeat: no-repeat;
             background-size: cover;
@@ -76,9 +76,10 @@
         }
 
         #ll {
-            height: 100px;
-            width: 100px;
-
+            height: 200px;
+            width: 200px;
+            z-index:1;
+            
         }
 
         #hundered {
@@ -95,10 +96,10 @@
 </head>
 
 <body>
-    <!-- -->
+    <!--head container with id=con -->
     <div id="con" style="background-color:#fff9f3;">
         <img src="psdlayers/Logo.png" style="margin-left:200px;margin-top:40px; ">
-         <!--horizontal navigation bar-->
+        <!--horizontal navigation bar-->
         <div class="navbar" style="float: right;">
             <ul class="nav nav-pills">
                 <li class="nav-item">
@@ -125,6 +126,7 @@
             </ul>
         </div>
         <div class="heading">
+            <img src="psdlayers/man.png" style="float:right;width:60%">
             <pre id="inno">
             Innovation for education
             and soceity
@@ -134,9 +136,10 @@
             chart your own course for academic success.
         </pre>
             <a id="visit" class="nav-link active" aria-current="page" href="#">Visit our campus</a>
-            <br><br><br><br><br><br><br><br><br><br>
+            <!-- <br><br><br><br><br><br><br><br><br><br> -->
+            <img  id="ll" src="psdlayers/leftleaf.png" > 
         </div>
-        <!-- <img  id="ll" src="psdlayers/leftleaf.png" > -->
+         
     </div>
     <img src="psdlayers/curve.png" style="height:100px;width:100%">
     <h2 style="text-align: center;">Our Department</h2>
