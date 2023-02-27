@@ -18,7 +18,7 @@ class Employee {
     }
     getEmpdetails(){
         console.log(`empid :${this.empid}  empname :${this.empname}  empdesignation :${this.empdesignation}  empsalary :${this.empsalary}  empproject :${this.empproject}`)
-    }
+    } 
 }
     const emp = new Employee(1,"Hari","developer",30000,"webui");
     emp.getEmpdetails();
