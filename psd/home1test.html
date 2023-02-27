@@ -15,14 +15,14 @@
     <style>
         .navbar {
             margin-right: 200px;
-            margin-top: 50px;
+            margin-top: 20px;
         }
 
         #apply {
             color: #ffc480;
             background-color: #ffffff;
             border-radius: 20px;
-            box-shadow:3px 3px 10px #cacaca;
+            box-shadow: 3px 3px 10px #cacaca;
         }
 
         #study {
@@ -32,8 +32,8 @@
 
         .heading {
             margin-top: 100px;
-            margin-left: 100px;
-            margin-right: 100px;
+            margin-left: 115px;
+            margin-right: 85px;
             position: relative;
 
         }
@@ -41,8 +41,8 @@
         .heading::before {
             content: '';
             inset: 0px;
-
-            /* background-image: url(psdlayers/man.png); */
+            background-image: url(psdlayers/man.png);
+            z-index: 0;
             position: absolute;
             background-repeat: no-repeat;
             background-size: cover;
@@ -53,7 +53,7 @@
         #inno {
             font-weight: bold;
             font-style: solid;
-            font-family:sans-serif;
+            font-family: sans-serif;
             font-size: 30px;
             color: #f0ae62;
         }
@@ -61,7 +61,6 @@
         #our {
             font-size: small;
             color: #5a6e79;
-            margin-top: 0px;
             margin-left: 50px;
             font-family: sans-serif;
         }
@@ -75,11 +74,23 @@
 
         }
 
+        /* left leaf css */
         #ll {
-            height: 200px;
-            width: 200px;
-            z-index:1;
+            height: 150px;
+            width: 150px;
+            z-index: 1;
+            position: absolute;
+
+        }
+
+        /* Right leaf css */
+        #rl {
             
+            height: 110px;
+            width: 110px;
+            z-index: 1;
+            position: relative;
+
         }
 
         #hundered {
@@ -88,6 +99,7 @@
             font-family: sans-serif;
         }
 
+        /* css of cards class level selctor contains all the child cards */
         .cards {
             display: flex;
         }
@@ -96,9 +108,9 @@
 </head>
 
 <body>
-    <!--head container with id=con -->
+    <!-- -->
     <div id="con" style="background-color:#fff9f3;">
-        <img src="psdlayers/Logo.png" style="margin-left:200px;margin-top:40px; ">
+        <img src="psdlayers/Logo.png" style="margin-left:200px;margin-top:20px;height:50px;width:50px;  ">
         <!--horizontal navigation bar-->
         <div class="navbar" style="float: right;">
             <ul class="nav nav-pills">
@@ -125,8 +137,7 @@
                 </li>
             </ul>
         </div>
-        <div class="heading">
-            <img src="psdlayers/man.png" style="float:right;width:60%">
+        <div class="heading" style="height: 475px;">
             <pre id="inno">
             Innovation for education
             and soceity
@@ -136,10 +147,12 @@
             chart your own course for academic success.
         </pre>
             <a id="visit" class="nav-link active" aria-current="page" href="#">Visit our campus</a>
-            <!-- <br><br><br><br><br><br><br><br><br><br> -->
-            <img  id="ll" src="psdlayers/leftleaf.png" > 
+            <!--left leaf-->
+            <img id="ll" src="psdlayers/leftleaf.png" style="margin-top:100px;">
+            <!--right leaf-->
+            <img id="rl" src="psdlayers/rightleaf.png" style="margin-top:100px;margin-right:50px;float:right;">
+            
         </div>
-         
     </div>
     <img src="psdlayers/curve.png" style="height:100px;width:100%">
     <h2 style="text-align: center;">Our Department</h2>
@@ -149,7 +162,7 @@
       should beware of wicked punch!
     </pre>
     <div class="cards">
-        <div class="card" style="width: 18rem;margin-left:240px;">
+        <div class="card" style="width: 18rem;margin-left:200px;">
             <img src="psdlayers/notebook.png" class="card-img-top">
             <div class="card-body" style="background-color:#f9703a;">
                 <p class="card-text" style="text-align: center;color:#ffffff;font-weight: bold;">Online Education</p>
@@ -168,6 +181,6 @@
             </div>
         </div>
     </div>
-</body>
+    <svg class="outercircle" viewBox="0 0 1098 1098" width="508" height="508" style="fill-opacity:0.6;fill:#fcf0e3 ;transform: translate(-30%, -70%);margin-top:252px"><path d="m549 0c303.2 0 549 245.8 549 549 0 303.2-245.8 549-549 549-303.2 0-549-245.8-549-549 0-303.2 245.8-549 549-549zm-392.2 549c0 216.6 175.6 392.2 392.2 392.2 216.6 0 392.2-175.6 392.2-392.2 0-216.6-175.6-392.2-392.2-392.2-216.6 0-392.2 175.6-392.2 392.2z"/></svg>
 
 </html>
