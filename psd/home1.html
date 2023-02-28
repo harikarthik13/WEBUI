@@ -27,8 +27,25 @@
 
         #study {
             color: #ffc178;
-            text-decoration: underline;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+
         }
+
+        #study:after {
+            content: '';
+            height: 1px;
+            bottom: 0px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 70%;
+            background: #ffc480;
+            position: absolute;
+
+        }
+
 
         .heading {
             margin-top: 100px;
@@ -85,7 +102,7 @@
 
         /* Right leaf css */
         #rl {
-            
+
             height: 110px;
             width: 110px;
             z-index: 1;
@@ -105,15 +122,24 @@
             position: relative;
             z-index: 1;
         }
-        /* css for outer transparent circle in left side */
-        .outercircle{
-            opacity:0.6;
-            fill:#fcf0e3;
-            transform: translate(-35%, -65%);
-            margin-top:200px;
-            z-index:0;
-            position:absolute;
 
+        /* css for outer transparent circle in left side */
+        .outercircle {
+            opacity: 0.6;
+            fill: #fcf0e3;
+            transform: translate(-35%, -65%);
+            margin-top: 238px;
+            z-index: 0;
+            position: absolute;
+
+        }
+
+        /* css for image on the outerircle with play button */
+        #fort {
+            position: absolute;
+            z-index: 1;
+            margin-top: 50px;
+            margin-left: 130px;
         }
     </style>
 
@@ -149,7 +175,7 @@
                 </li>
             </ul>
         </div>
-        <div class="heading" style="height: 475px;">
+        <div class="heading" style="height: 513px;">
             <pre id="inno">
             Innovation for education
             and soceity
@@ -173,7 +199,7 @@
         poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men 
       should beware of wicked punch!
     </pre>
-    
+
     <!-- card class that contains cards -->
     <div class="cards">
         <div class="card" style="width: 18rem;margin-left:200px;">
@@ -196,7 +222,13 @@
         </div>
     </div>
     <!--Outer Half transparent circle at left-->
-    <svg class="outercircle" viewBox="0 0 1098 1098" width="700" height="460"><path d="m549 0c303.2 0 549 245.8 549 549 0 303.2-245.8 549-549 549-303.2 0-549-245.8-549-549 0-303.2 245.8-549 549-549zm-392.2 549c0 216.6 175.6 392.2 392.2 392.2 216.6 0 392.2-175.6 392.2-392.2 0-216.6-175.6-392.2-392.2-392.2-216.6 0-392.2 175.6-392.2 392.2z"/></svg>
+    <svg class="outercircle" viewBox="0 0 1098 1098" width="800" height="500">
+        <path
+            d="m549 0c303.2 0 549 245.8 549 549 0 303.2-245.8 549-549 549-303.2 0-549-245.8-549-549 0-303.2 245.8-549 549-549zm-392.2 549c0 216.6 175.6 392.2 392.2 392.2 216.6 0 392.2-175.6 392.2-392.2 0-216.6-175.6-392.2-392.2-392.2-216.6 0-392.2 175.6-392.2 392.2z" />
+    </svg>
+    <!--image on the outerircle with play button-->
+    <img id="fort" style="height: 230px;width: 300px;" src="psdlayers/fort.png">
+    
 </body>
 
 </html>

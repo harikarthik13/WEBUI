@@ -12,6 +12,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bddeb2fe76.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <style>
         .navbar {
             margin-right: 200px;
@@ -27,13 +28,30 @@
 
         #study {
             color: #ffc178;
-            text-decoration: underline;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+
         }
+
+        #study:after {
+            content: '';
+            height: 1px;
+            bottom: 0px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 70%;
+            background: #ffc480;
+            position: absolute;
+
+        }
+
 
         .heading {
             margin-top: 100px;
             margin-left: 115px;
-            margin-right: 85px;
+            margin-right: 78px;
             position: relative;
 
         }
@@ -85,7 +103,7 @@
 
         /* Right leaf css */
         #rl {
-            
+
             height: 110px;
             width: 110px;
             z-index: 1;
@@ -102,6 +120,38 @@
         /* css of cards class level selctor contains all the child cards */
         .cards {
             display: flex;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* css for outer transparent circle in left side */
+        .outercircle {
+            opacity: 0.6;
+            fill: #fcf0e3;
+            transform: translate(-35%, -65%);
+            margin-top: 238px;
+            z-index: 0;
+            position: absolute;
+
+        }
+
+        /* css for image on the outerircle with play button */
+        #fort {
+            position: absolute;
+            z-index: 1;
+            margin-top: 50px;
+            margin-left: 130px;
+        }
+        .limitcontainer{
+            margin-left:600px;
+        }
+        /* css for content tht starts with limitless  */
+        #limitless{
+            color: #252c3a;
+            font-size:30px;
+            font-family:"Montserrat";
+            font-weight: bold;
+            
         }
     </style>
 
@@ -137,7 +187,7 @@
                 </li>
             </ul>
         </div>
-        <div class="heading" style="height: 475px;">
+        <div class="heading" style="height: 513px;">
             <pre id="inno">
             Innovation for education
             and soceity
@@ -151,9 +201,9 @@
             <img id="ll" src="psdlayers/leftleaf.png" style="margin-top:100px;">
             <!--right leaf-->
             <img id="rl" src="psdlayers/rightleaf.png" style="margin-top:100px;margin-right:50px;float:right;">
-            
         </div>
     </div>
+    <!--curve design under heading class-->
     <img src="psdlayers/curve.png" style="height:100px;width:100%">
     <h2 style="text-align: center;">Our Department</h2>
     <pre id="hundered">
@@ -161,6 +211,8 @@
         poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men 
       should beware of wicked punch!
     </pre>
+
+    <!-- card class that contains cards -->
     <div class="cards">
         <div class="card" style="width: 18rem;margin-left:200px;">
             <img src="psdlayers/notebook.png" class="card-img-top">
@@ -181,6 +233,17 @@
             </div>
         </div>
     </div>
-    <svg class="outercircle" viewBox="0 0 1098 1098" width="508" height="508" style="fill-opacity:0.6;fill:#fcf0e3 ;transform: translate(-30%, -70%);margin-top:252px"><path d="m549 0c303.2 0 549 245.8 549 549 0 303.2-245.8 549-549 549-303.2 0-549-245.8-549-549 0-303.2 245.8-549 549-549zm-392.2 549c0 216.6 175.6 392.2 392.2 392.2 216.6 0 392.2-175.6 392.2-392.2 0-216.6-175.6-392.2-392.2-392.2-216.6 0-392.2 175.6-392.2 392.2z"/></svg>
+    <!--Outer Half transparent circle at left-->
+    <svg class="outercircle" viewBox="0 0 1098 1098" width="800" height="500">
+        <path
+            d="m549 0c303.2 0 549 245.8 549 549 0 303.2-245.8 549-549 549-303.2 0-549-245.8-549-549 0-303.2 245.8-549 549-549zm-392.2 549c0 216.6 175.6 392.2 392.2 392.2 216.6 0 392.2-175.6 392.2-392.2 0-216.6-175.6-392.2-392.2-392.2-216.6 0-392.2 175.6-392.2 392.2z" />
+    </svg>
+    <!--image on the outerircle with play button-->
+    <img id="fort" style="height: 230px;width: 300px;" src="psdlayers/fort.png">
+    <div class="limitcontainer">
+    <pre id="limitless">Limitless learning, more 
+possibilities</pre>
+</div>
+</body>
 
 </html>
