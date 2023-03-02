@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                var img = $("#ben");
+                img.animate({ height: '200px' }, 500);
+                img.fadeOut(1000, function () {
+                    var img = $("#rath");
+                    img.animate({ height: '300px' }, 500);
+                    img.fadeIn("fast");
+                    img.animate({ right: '100px' }, "fast");
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                var img = $("#ironman");           
+                img.animate({ left:'70px' }, "fast");
+                img.animate({ left:'80px' }, "fast");
+                img.animate({ left:'100px' }, "slow");
+            })
+
+        })
+    </script>
+    <style>
+        #start {
+            background-color: rgb(0, 174, 255);
+            color: rgb(17, 17, 17);
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 270px;
+
+
+        }
+        #rath {
+            display: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button id="start">let's go</button>
+    <img id="ironman" src="gif/iron-man.gif"
+        style="height:200px;width:200px;margin-top:200px;margin-right:100px;float: left;position: relative;">
+    <img id="rath" src="gif/rath.gif"
+        style="height:200px;width:200px;margin-top:150px;margin-right:100px;float: right;position: relative;">
+    <img id="ben" src="gif/ben10.gif"
+        style="height:200px;width:200px;margin-top:200px;margin-right:100px;float: right;">
+
+</body>
+
+</html>
