@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#regform").click
+                (function () {
+                    $("#toggle").toggle();
+                });
+
+        });
+        $(document).ready(function () {
+            $("#loginform").click
+            (function () {
+                $("#toggle2").toggle();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <button id="regform">click me to toggle registration form</button>
+    <div id="toggle">
+        <!--registraton form-->
+        <form action=" ">
+            <fieldset>
+                <legend style="text-align: center;">REGISTRATION FORM</legend>
+                <label>USERNAME :</label>
+                <input type="text" name="name" placeholder="name" required>
+                <br>
+                <br>
+                <label>E-MAIL :</label>
+                <input type="email" name="mail" placeholder="xyz@gmail.com" required>
+                <br><br>
+                <label>PASSWORD :</label>
+                <input type="password" name="password" placeholder="xxxxxxxx" required>
+                <br><br>
+                <input type="checkbox" name="password" value="yes"><label>REMEMBER PASSWORD</label></input>
+                <br><br>
+                <label>GENDER :</label>
+                <input type="radio" id="gender" name="gender" value="male">MALE</input>
+                <input type="radio" id="gender" name="gender" value="female">FEMALE</input>
+                <br><br>
+                <label>ADDRESS :</label>
+                <textarea></textarea>
+                <br><br>
+                <label>DATE OF BIRTH :</label>
+                <input type="datetime-local">SELECT DATE AND TIME</input>
+                <br><br>
+                <label>Mobile Number :</label>
+                <input type="tel" pattern="[0-9]{10}" name="mno" placeholder="xxxxxxxxxx" required>
+                <br><br>
+                <label>TELEPHONE NUMBER :</label>
+                <input type="tel" pattern="[0-3]{3}-[0-4]{4}-[0-3]{3}" name="teleno">
+                <br><br>
+                <label>PROFFESSION</label><br>
+                <select name="PROFFESSION">
+                    <optgroup label="IT">
+                        <option>WEB DESIGNER</option>
+                        <option>SOFTWARE DEVELOPER</option>
+                        <option>FULL-STACK</option>
+                    </optgroup>
+                    <OPTgroup label="NON-IT">
+                        <option>DOCTOR</option>
+                        <option>PILOT</option>
+                        <option>ADVOCATE</option>
+                    </OPTgroup>
+                </select>
+                <br><br>
+                <button type="submit" style="margin-left:  600px;">submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+    <!--login form-->
+    <button id="loginform">click me to toggle login form</button>
+    
+    <form action="" name="validation" id="toggle2">
+        <fieldset>
+            <legend style="text-align: center;">login Form</legend>
+            <label>User Name :</label>
+            <input type="text" name="un" placeholder=" enter username">
+            <br><br>
+            <label>Password :</label>
+            <input type="password" name="pw" placeholder="enter  password">
+            <br><br>
+            <label> Confirm Password :</label>
+            <input type="password" name="cpw" placeholder="enter  password">
+            <br><br>
+            <input type="button" onclick="validate()" value="Next">
+            
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
