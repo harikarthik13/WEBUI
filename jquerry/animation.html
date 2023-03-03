@@ -17,7 +17,10 @@
                     var img = $("#rath");
                     img.animate({ height: '300px' }, 500);
                     img.fadeIn("fast");
-                    img.animate({ right: '100px' }, "fast");
+                    img.animate({ right: '290px' }, "fast");
+                    img.animate({ height: '300px' },"fast");
+                    img.delay("2000");
+                    img.fadeOut('slow');
                 });
             });
         });
@@ -25,14 +28,66 @@
     <script>
         $(document).ready(function () {
             $("#start").click(function () {
-                var img = $("#ironman");           
-                img.animate({ left:'70px' }, "fast");
-                img.animate({ left:'80px' }, "fast");
-                img.animate({ left:'100px' }, "slow");
+                var img = $("#ironman");
+                img.delay("1600");
+                img.fadeIn("slow");
+                img.animate({ left: '230px' }, "fast");
+                img.animate({ height: '270px' },"fast");
+                img.delay("3500")
+                img.fadeOut('fast');
             })
 
         })
     </script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                var img = $("#vs");
+                img.delay("2500");
+                img.fadeIn("fast");
+                img.fadeOut('slow')
+
+            })
+
+        })
+    </script>
+      <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                var img = $("#bull");
+                img.delay("3800");
+                img.fadeIn("fast");
+                img.animate({ left: '230px' }, "fast");
+                img.fadeOut('slow');
+
+
+            })
+
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                var img = $("#wi");
+                img.delay("6500");
+                img.fadeIn("fast");
+
+            })
+
+        })
+    </script>
+     <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                var img = $("#cup");
+                img.delay("6500");
+                img.fadeIn("fast");
+
+            })
+
+        })
+    </script>
+    
     <style>
         #start {
             background-color: rgb(0, 174, 255);
@@ -40,10 +95,32 @@
             border-radius: 5px;
             padding: 5px;
             margin-left: 270px;
-
+            position: fixed;
 
         }
+
+        #ironman {
+            display: none;
+
+        }
+
         #rath {
+            display: none;
+
+        }
+
+        #vs {
+            display: none;
+        }
+        #bull {
+            display: none;
+
+        }
+        #wi {
+            display: none;
+
+        }
+        #cup {
             display: none;
 
         }
@@ -51,14 +128,31 @@
 </head>
 
 <body>
-    <button id="start">let's go</button>
+    <div  style="position: fixed; margin-left:300px;">
+        <button id="start">let's go</button>
+    </div>
     <img id="ironman" src="gif/iron-man.gif"
         style="height:200px;width:200px;margin-top:200px;margin-right:100px;float: left;position: relative;">
     <img id="rath" src="gif/rath.gif"
         style="height:200px;width:200px;margin-top:150px;margin-right:100px;float: right;position: relative;">
     <img id="ben" src="gif/ben10.gif"
         style="height:200px;width:200px;margin-top:200px;margin-right:100px;float: right;">
-
+    <div id="hi" style="position: fixed; margin-left:500px;">
+        <img id="vs" src="gif/olympique-de-marseille-om.gif"
+            style="height:200px;width:200px;margin-top:200px;margin-right:350px;position:relative;float: right;">
+    </div>
+    <div id="bullet" style="position: fixed; margin-left:400px;">
+        <img id="bull" src="gif/bullets.gif"
+            style="height:200px;width:200px;margin-top:200px;margin-right:350px;position:relative;float: right;">
+    </div>
+    <div id="winner" style="position: fixed; margin-left:500px;">
+        <img id="wi" src="gif/iron.gif"
+            style="height:400px;width:300px;margin-top:150px;margin-right:400px;position:relative;float: right;">
+    </div>
+    <div id="win" style="position: fixed;margin-bottom:10px;margin-left:600px;">
+        <img id="cup" src="gif/winner.gif"
+            style="height:150px;width:150px;">
+    </div>
 </body>
 
 </html>
