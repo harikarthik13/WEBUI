@@ -13,6 +13,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bddeb2fe76.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <style>
         .navbar {
             margin-right: 200px;
@@ -126,12 +127,15 @@
 
         /* css for outer transparent circle in left side */
         .outercircle {
-            opacity: 0.6;
             fill: #fcf0e3;
             transform: translate(-35%, -65%);
             margin-top: 238px;
             z-index: 0;
             position: absolute;
+            height: 530px;
+            width: 600px;
+
+
 
         }
 
@@ -142,16 +146,29 @@
             margin-top: 50px;
             margin-left: 130px;
         }
-        .limitcontainer{
-            margin-left:600px;
+
+        .limitcontainer {
+            margin-left: 550px;
         }
+
         /* css for content tht starts with limitless  */
-        #limitless{
+        #limitless {
             color: #252c3a;
-            font-size:30px;
-            font-family:"Montserrat";
+            font-size: 30px;
+            font-family: "Montserrat";
             font-weight: bold;
-            
+            margin-top: 50px;
+
+        }
+
+        /* css for halfcircle bg in right side */
+        .halfcircle {
+            float: right;
+            z-index: 0;
+            transform: translate(50%,10%);
+            position: relative;
+            height:800px;
+            width: 800px;
         }
     </style>
 
@@ -234,16 +251,35 @@
         </div>
     </div>
     <!--Outer Half transparent circle at left-->
-    <svg class="outercircle" viewBox="0 0 1098 1098" width="800" height="500">
-        <path
-            d="m549 0c303.2 0 549 245.8 549 549 0 303.2-245.8 549-549 549-303.2 0-549-245.8-549-549 0-303.2 245.8-549 549-549zm-392.2 549c0 216.6 175.6 392.2 392.2 392.2 216.6 0 392.2-175.6 392.2-392.2 0-216.6-175.6-392.2-392.2-392.2-216.6 0-392.2 175.6-392.2 392.2z" />
-    </svg>
+    <img class="outercircle" src="psdlayers/bg shape (1).png">
+
     <!--image on the outerircle with play button-->
-    <img id="fort" style="height: 230px;width: 300px;" src="psdlayers/fort.png">
+    <img id="fort" style="height: 250px;width: 330px;" src="psdlayers/fort.png">
+
     <div class="limitcontainer">
-    <pre id="limitless">Limitless learning, more 
+        <pre id="limitless">Limitless learning, more 
 possibilities</pre>
-</div>
+        <pre style="color: #5a6e79;font-family: 'Work Sans'">
+The University of Rochester is one of the country's top-tier 
+research universities. Our campuses are home to 200 
+academic majors, more than 2,000 faculty and instructional 
+staff, and some 10,000 students—approximately half of whom 
+are women.
+
+Learning at the University of Rochester is also on a very personal 
+scale. Rochester remains one of the smallest and most collegiate 
+among top research universities, with smaller classes, a low 10:1 
+student to teacher ratio, and increased interactions with faculty.
+</pre>
+        <div style="display: flex;">
+            <img style="margin-top:30px;height: 40px;width:90px;" src="psdlayers/4000 Students.png">
+            <img style="margin-left:100px;margin-top:30px;height: 40px;width:50px;" src="psdlayers/260 Courses.png">
+            <img style="margin-left:100px;margin-top:30px;height: 40px;width:90px;"
+                src="psdlayers/5679 Hours video.png">
+        </div>
+    </div>
+    <!--half-circle background in rightside-->
+    <img class="halfcircle" src="psdlayers/circlebg.png">
 </body>
 
 </html>
