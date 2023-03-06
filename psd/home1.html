@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/bddeb2fe76.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <style>
         .navbar {
             margin-right: 200px;
@@ -81,7 +82,7 @@
             font-size: small;
             color: #5a6e79;
             margin-left: 52px;
-            font-family:"Work Sans";
+            font-family: "Work Sans";
             font-weight: bold;
         }
 
@@ -116,7 +117,7 @@
         #hundered {
             text-align: center;
             color: #5a6e79;
-            font-family:"Work Sans";
+            font-family: "Work Sans";
             font-weight: bold;
         }
 
@@ -156,7 +157,7 @@
             color: #252c3a;
             font-size: 30px;
             font-family: "Montserrat";
-            font-weight:bolder;
+            font-weight: bolder;
             margin-top: 50px;
         }
 
@@ -165,20 +166,59 @@
             float: right;
             z-index: 0;
             position: relative;
-            width: 400px;
+            width: 440px;
             
+
         }
+
         /* css for span tag with heading */
-        #uni{
+        #uni {
             position: absolute;
             font-size: xx-large;
             margin-top: 60px;
-            margin-left:500px;
+            margin-left: 500px;
             font-family: "Montserrat";
             font-weight: bolder;
         }
+
         /* css for cards in row 1 */
-      
+        .firstrowcard {
+            box-shadow: 10px 10px 25px rgb(185, 185, 185);
+        }
+
+        /* css for the contents in card1 */
+        #card1h6 {
+            font-size: smaller;
+            color: #ffc178;
+            text-decoration: underline;
+            font-family: "Work Sans";
+        }
+
+        #card1para {
+            font-size: smaller;
+            font-family: 'Roboto';
+            color: #5a6e79;
+
+        }
+
+        /* css for h6 in card2,crd3,card4 */
+        .card234 {
+            font-size: smaller;
+            color: #252c3a;
+            font-weight: 600;
+            font-family: "Work Sans";
+        }
+
+        /* css for p in card2,crd3,card4 */
+        #cp234 {
+            font-size: smaller;
+            font-family: 'Roboto';
+            color: #5a6e79;
+        }
+
+        #keep234 {
+            color: #5a6e79;
+        }
     </style>
 
 </head>
@@ -292,44 +332,136 @@ student to teacher ratio, and increased interactions with faculty.
     <!--half-circle background in rightside-->
     <img class="halfcircle" src="psdlayers/semicircle.png">
     <!--div containing cards row1-->
-    <div style="display: flex; margin-top:200px;margin-left:200px;z-index: 1;position:absolute;">
+    <div style="display: flex; margin-top:200px;margin-left:180px;z-index: 1;position:absolute;">
         <!--card1-->
-    <div  class="card" style="width: 13rem;height:18rem;">
-        <img src="psdlayers/grapic card.png" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to.</p>
-          <h6 class="card-text">Keep reading...</h6>
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;">
+            <img style="height:154px;" src="psdlayers/grapic card.png" class="card-img-top">
+            <div class="card-body">
+                <h6 id="card1h6" class="card-title">Photoshop CC 2018 Essential
+                    Training: The Basics</h6>
+                <p id="card1para" class="card-text">Graphics Design</p>
+                <h6 class="card-text">Keep reading...</h6>
+            </div>
         </div>
-      </div>
-      <!--card2-->
-      <div  class="card" style="width: 13rem;height:20rem;margin-left:15px;">
-        <img src="psdlayers/grapic card.png" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to.</p>
-          <h6 class="card-text">Keep reading...</h6>
+        <!--card2-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/cardpic2.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Get Started Coding Android
+                    Apps With Kotlin</h6>
+                <p id="cp234" class="card-text">Global System</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
         </div>
-      </div>
-      <!--card3-->
-      <div class="card" style="width: 13rem;height:20rem;margin-left:15px;">
-        <img src="psdlayers/grapic card.png" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to.</p>
-          <h6 class="card-text">Keep reading...</h6>
+        <!--card3-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/cardpic3.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Create Turntable Animations
+                    With Cinema 4D</h6>
+                <p style="font-size:11px;" id="cp234" class="card-text">Computer & Information Technology</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
         </div>
-      </div>
-      <!--card4-->
-      <div class="card" style="width: 13rem;height:20rem;margin-left:15px;">
-        <img src="psdlayers/grapic card.png" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to.</p>
-          <h6 class="card-text">Keep reading...</h6>
+        <!--card4-->
+        <div class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/cardpic4.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">A Beginner’s Guide to the
+                    New Bootstrap 4 Grid</h6>
+                <p id="cp234" class="card-text">Web Development</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
         </div>
-      </div>
     </div>
+    <!--div containing cards row1-->
+    <div style="display: flex; margin-top:200px;margin-left:180px;z-index: 1;position:absolute;">
+        <!--card1-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;">
+            <img style="height:154px;" src="psdlayers/grapic card.png" class="card-img-top">
+            <div class="card-body">
+                <h6 id="card1h6" class="card-title">Photoshop CC 2018 Essential
+                    Training: The Basics</h6>
+                <p id="card1para" class="card-text">Graphics Design</p>
+                <h6 class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+        <!--card2-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/cardpic2.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Get Started Coding Android
+                    Apps With Kotlin</h6>
+                <p id="cp234" class="card-text">Global System</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+        <!--card3-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/cardpic3.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Create Turntable Animations
+                    With Cinema 4D</h6>
+                <p style="font-size:11px;" id="cp234" class="card-text">Computer & Information Technology</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+        <!--card4-->
+        <div class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/cardpic4.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">A Beginner’s Guide to the
+                    New Bootstrap 4 Grid</h6>
+                <p id="cp234" class="card-text">Web Development</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+    </div>
+    <!--div containing cards row2-->
+    <div style="display: flex; position:absolute;margin-top: 520px;margin-left:165px;">
+        <!--card1-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/rc1.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Get Started Coding Android
+                    Apps With Kotlin</h6>
+                <p id="cp234" class="card-text">Global System</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+        <!--card2-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/rc2.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Get Started Coding Android
+                    Apps With Kotlin</h6>
+                <p id="cp234" class="card-text">Global System</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+        <!--card3-->
+        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/rc3.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Get Started Coding Android
+                    Apps With Kotlin</h6>
+                <p id="cp234" class="card-text">Global System</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+        <!--card4-->
+        <div  class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+            <img src="psdlayers/rc4.png" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card234" class="card-title">Get Started Coding Android
+                    Apps With Kotlin</h6>
+                <p id="cp234" class="card-text">Global System</p>
+                <h6 id="keep234" class="card-text">Keep reading...</h6>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
-</html> 
+</html>
