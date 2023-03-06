@@ -38,7 +38,7 @@
 
         #study:after {
             content: '';
-            height: 1px;
+            height: 2px;
             bottom: 0px;
             margin: 0 auto;
             left: 0;
@@ -167,7 +167,7 @@
             z-index: 0;
             position: relative;
             width: 440px;
-            
+
 
         }
 
@@ -219,14 +219,63 @@
         #keep234 {
             color: #5a6e79;
         }
+
+        /*css for footer*/
+        .footer {
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            z-index: 1;
+            background-color: #252c3a;
+            margin-top: 920px;
+            display: flex;
+        }
+
+        /*css for footbg*/
+        #footbg {
+            z-index: 1;
+            position: absolute;
+            margin-top: 800px;
+            width: 91%;
+            height:450px;
+            margin-left: 90px;
+        }
+
+        /*css for feature div*/
+        #feature {
+            margin-left: 30px;
+        }
+
+         /*css for learning div*/
+         #learning {
+            margin-left: 30px;
+        }
+
+          /*css for support div*/
+          #support {
+            margin-left: 30px;
+        }
+
+        /* css for base foot*/
+        #basefoot{
+           background-color:#1d232e;
+            height:50px;
+            z-index:1;
+            position: absolute;
+            margin-top:1200px;
+            width:100%;
+
+        }
+
     </style>
 
 </head>
 
 <body>
-    <!-- -->
+    <!--navbar -->
     <div id="con" style="background-color:#fff9f3;">
         <img src="psdlayers/Logo.png" style="margin-left:215px;margin-top:20px;height:50px;width:50px;  ">
+
         <!--horizontal navigation bar-->
         <div class="navbar" style="float: right;">
             <ul class="nav nav-pills">
@@ -263,12 +312,15 @@
             chart your own course for academic success.
         </pre>
             <a id="visit" class="nav-link active" aria-current="page" href="#">Visit our campus</a>
+
             <!--left leaf-->
             <img id="ll" src="psdlayers/leftleaf.png" style="margin-top:100px;">
+
             <!--right leaf-->
             <img id="rl" src="psdlayers/rightleaf.png" style="margin-top:100px;margin-right:50px;float:right;">
         </div>
     </div>
+
     <!--curve design under heading class-->
     <img src="psdlayers/curve.png" style="height:100px;width:100%">
     <h2 style="text-align: center;font-weight: bolder;font-family:Work Sans;">Our Department</h2>
@@ -299,6 +351,7 @@
             </div>
         </div>
     </div>
+
     <!--Outer Half transparent circle at left-->
     <img class="outercircle" src="psdlayers/bg shape (1).png">
 
@@ -327,10 +380,13 @@ student to teacher ratio, and increased interactions with faculty.
                 src="psdlayers/5679 Hours video.png">
         </div>
     </div>
+
     <!--span tag with heading-->
     <span id="uni" style="color:#252c3a;"> Around the University</span>
+
     <!--half-circle background in rightside-->
     <img class="halfcircle" src="psdlayers/semicircle.png">
+
     <!--div containing cards row1-->
     <div style="display: flex; margin-top:200px;margin-left:180px;z-index: 1;position:absolute;">
         <!--card1-->
@@ -374,58 +430,16 @@ student to teacher ratio, and increased interactions with faculty.
             </div>
         </div>
     </div>
-    <!--div containing cards row1-->
-    <div style="display: flex; margin-top:200px;margin-left:180px;z-index: 1;position:absolute;">
-        <!--card1-->
-        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;">
-            <img style="height:154px;" src="psdlayers/grapic card.png" class="card-img-top">
-            <div class="card-body">
-                <h6 id="card1h6" class="card-title">Photoshop CC 2018 Essential
-                    Training: The Basics</h6>
-                <p id="card1para" class="card-text">Graphics Design</p>
-                <h6 class="card-text">Keep reading...</h6>
-            </div>
-        </div>
-        <!--card2-->
-        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-            <img src="psdlayers/cardpic2.png" class="card-img-top">
-            <div class="card-body">
-                <h6 class="card234" class="card-title">Get Started Coding Android
-                    Apps With Kotlin</h6>
-                <p id="cp234" class="card-text">Global System</p>
-                <h6 id="keep234" class="card-text">Keep reading...</h6>
-            </div>
-        </div>
-        <!--card3-->
-        <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-            <img src="psdlayers/cardpic3.png" class="card-img-top">
-            <div class="card-body">
-                <h6 class="card234" class="card-title">Create Turntable Animations
-                    With Cinema 4D</h6>
-                <p style="font-size:11px;" id="cp234" class="card-text">Computer & Information Technology</p>
-                <h6 id="keep234" class="card-text">Keep reading...</h6>
-            </div>
-        </div>
-        <!--card4-->
-        <div class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-            <img src="psdlayers/cardpic4.png" class="card-img-top">
-            <div class="card-body">
-                <h6 class="card234" class="card-title">A Beginner’s Guide to the
-                    New Bootstrap 4 Grid</h6>
-                <p id="cp234" class="card-text">Web Development</p>
-                <h6 id="keep234" class="card-text">Keep reading...</h6>
-            </div>
-        </div>
-    </div>
+
     <!--div containing cards row2-->
     <div style="display: flex; position:absolute;margin-top: 520px;margin-left:165px;">
         <!--card1-->
         <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
             <img src="psdlayers/rc1.png" class="card-img-top">
             <div class="card-body">
-                <h6 class="card234" class="card-title">Get Started Coding Android
-                    Apps With Kotlin</h6>
-                <p id="cp234" class="card-text">Global System</p>
+                <h6 class="card234" class="card-title">A Designer’s Guide to Vue.js
+                    Components</h6>
+                <p id="cp234" class="card-text">Art Deperments</p>
                 <h6 id="keep234" class="card-text">Keep reading...</h6>
             </div>
         </div>
@@ -433,9 +447,9 @@ student to teacher ratio, and increased interactions with faculty.
         <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
             <img src="psdlayers/rc2.png" class="card-img-top">
             <div class="card-body">
-                <h6 class="card234" class="card-title">Get Started Coding Android
-                    Apps With Kotlin</h6>
-                <p id="cp234" class="card-text">Global System</p>
+                <h6 class="card234" class="card-title">Code a Swift App With Realm
+                    Mobile Database</h6>
+                <p id="cp234" class="card-text">Music</p>
                 <h6 id="keep234" class="card-text">Keep reading...</h6>
             </div>
         </div>
@@ -443,25 +457,59 @@ student to teacher ratio, and increased interactions with faculty.
         <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
             <img src="psdlayers/rc3.png" class="card-img-top">
             <div class="card-body">
-                <h6 class="card234" class="card-title">Get Started Coding Android
-                    Apps With Kotlin</h6>
-                <p id="cp234" class="card-text">Global System</p>
+                <h6 class="card234" class="card-title">10 Essential Design Tips in
+                    Adobe Illustrator</h6>
+                <p id="cp234" class="card-text">Technology Information</p>
                 <h6 id="keep234" class="card-text">Keep reading...</h6>
             </div>
         </div>
         <!--card4-->
-        <div  class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+        <div class="card" style="width: 14rem;height:19rem;margin-left:15px;">
             <img src="psdlayers/rc4.png" class="card-img-top">
             <div class="card-body">
-                <h6 class="card234" class="card-title">Get Started Coding Android
-                    Apps With Kotlin</h6>
-                <p id="cp234" class="card-text">Global System</p>
+                <h6 class="card234" class="card-title">Modern PHP From The
+                    Beginning</h6>
+                <p id="cp234" class="card-text">Data Science</p>
                 <h6 id="keep234" class="card-text">Keep reading...</h6>
             </div>
         </div>
-
     </div>
-
+    <!--bg for footer-->
+    <div>
+        <img id="footbg" src="psdlayers/hat.png">
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <!--edmo div-->
+        <div id="edmo" style="margin-left:150px;margin-top:50px;">
+            <img style="height:30px;position: absolute;z-index:0;" src="psdlayers/edmo.png">
+            <img style="margin-top:50px;float: left;top:0;left:0;" src="psdlayers/logoes.png">
+            <img style="position: absolute;top: 180px; left: 145px;" src="psdlayers/line.png">
+        </div>
+        <!--feature div-->
+        <div id="feature">
+            <p style="color: #ffffff;margin-top:50px;font-family:'Roboto';"> FEATURED PROGRAMS</p>
+            <img src="psdlayers/fixed.png">
+        </div>
+         <!--learning div-->
+         <div id="learning">
+            <p style="color: #ffffff;margin-top:50px;font-family:'Roboto';">Learning</p>
+            <img src="psdlayers/plan.png">
+        </div>
+          <!--support div-->
+          <div id="support">
+            <p style="color: #ffffff;margin-top:50px;font-family:'Roboto';">Support Forum</p>
+            <pre style="color:#969595;font-size:12px;font-family:'Roboto' ;">Write your email into below field and join our
+quick support forum.
+            </pre>
+            <img src="psdlayers/Form.png">
+        </div>
+    </div>
+    <!--basefoot-->
+    <div id="basefoot">
+     <img src="psdlayers/Copyright.png" style="float: left;margin-top: 20px;margin-left:200px;">
+     <img src="psdlayers/Site.png" style="float: right;margin-top: 20px;margin-right:80px;">
+    </div>
 </body>
 
 </html>
