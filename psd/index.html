@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>Innovative Education</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -15,288 +15,14 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <style>
-        .navbar {
-            margin-right: 200px;
-            margin-top: 20px;
-        }
-
-        #apply {
-            color: #ffc480;
-            background-color: #ffffff;
-            border-radius: 20px;
-            box-shadow: 3px 3px 10px #cacaca;
-        }
-
-        #study {
-            color: #ffc178;
-            text-decoration: none;
-            font-weight: bold;
-            position: relative;
-
-        }
-
-        #study:after {
-            content: '';
-            height: 2px;
-            bottom: 0px;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            width: 70%;
-            background: #ffc480;
-            position: absolute;
-
-        }
-
-
-        .heading {
-            margin-top: 100px;
-            margin-left: 115px;
-            margin-right: 78px;
-            position: relative;
-
-        }
-
-        .heading::before {
-            content: '';
-            inset: 0px;
-            background-image: url(psdlayers/man.png);
-            z-index: 0;
-            position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-
-        #inno {
-            position: absolute;
-            font-weight: bold;
-            font-style: solid;
-            font-family: sans-serif;
-            font-size: 30px;
-            color: #f0ae62;
-            margin-top: 50px;
-        }
-
-        #our {
-            position: absolute;
-            font-size: small;
-            color: #5a6e79;
-            margin-left: 45px;
-            font-family: "Work Sans";
-            font-weight: bold;
-            margin-top: 160px;
-        }
-
-        #visit {
-            position: absolute;
-            margin-top: 220px;
-            color: #ffffff;
-            background-color: #f0ae62;
-            border-radius: 20px;
-            width: fit-content;
-            margin-left: 100px;
-
-        }
-
-        /* left leaf css */
-        #ll {
-            height: 180px;
-            width: 180px;
-            z-index: 1;
-            margin-left: 25px;
-            margin-top: 460px;
-            position: absolute;
-
-        }
-
-        /* Right leaf css */
-        #rl {
-
-            height: 170px;
-            width: 110px;
-            z-index: 1;
-            position: relative;
-
-        }
-
-        /* curve design under heading class */
-        #curveimage {
-            height: 150px;
-            width: 105%;
-            margin-top: 690px;
-            position: absolute;
-            transform: translate(-5%);
-            
-        }
-
-        #hundered {
-            position: absolute;
-            margin-left: 400px;
-            margin-top: 850px;
-            text-align: center;
-            color: #5a6e79;
-            font-family: "Work Sans";
-            font-weight: bold;
-        }
-
-        /* css of cards class level selctor contains all the child cards */
-        .cards {
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            margin-top: 950px;
-
-        }
-
-        /* css for outer transparent circle in left side */
-        .outercircle {
-            fill: #fcf0e3;
-            transform: translate(-35%, -65%);
-            margin-top: 367px;
-            z-index: 0;
-            position: absolute;
-            height: 770px;
-            width: 690px;
-
-        }
-
-        /* css for image on the outerircle with play button */
-        #fort {
-            position: absolute;
-            z-index: 1;
-            margin-top: 50px;
-            margin-left: 100px;
-        }
-
-        .limitcontainer {
-            margin-left: 620px;
-        }
-
-        /* css for content tht starts with limitless  */
-        #limitless {
-            color: #252c3a;
-            font-size: 30px;
-            font-family: "Montserrat";
-            font-weight: bolder;
-            margin-top: 50px;
-        }
-
-        /* css for halfcircle bg in right side */
-        .halfcircle {
-            margin-left: 905px;
-            z-index: 0;
-            position: absolute;
-            width: 440px;
-
-
-        }
-
-        /* css for span tag with heading */
-        #uni {
-            position: absolute;
-            font-size: xx-large;
-            margin-top: 60px;
-            margin-left: 500px;
-            font-family: "Montserrat";
-            font-weight: bolder;
-        }
-
-        /* css for cards in row 1 */
-        .firstrowcard {
-            box-shadow: 10px 10px 25px rgb(185, 185, 185);
-        }
-
-        /* css for the contents in card1 */
-        #card1h6 {
-            font-size: smaller;
-            color: #ffc178;
-            text-decoration: underline;
-            font-family: "Work Sans";
-        }
-
-        #card1para {
-            font-size: smaller;
-            font-family: 'Roboto';
-            color: #5a6e79;
-
-        }
-
-        /* css for h6 in card2,crd3,card4 */
-        .card234 {
-            font-size: smaller;
-            color: #252c3a;
-            font-weight: 600;
-            font-family: "Work Sans";
-        }
-
-        /* css for p in card2,crd3,card4 */
-        #cp234 {
-            font-size: smaller;
-            font-family: 'Roboto';
-            color: #5a6e79;
-        }
-
-        #keep234 {
-            color: #5a6e79;
-        }
-
-        /*css for footer*/
-        .footer {
-            width: 1340px;
-            height: 300px;
-            position: absolute;
-            z-index: 1;
-            background-color: #252c3a;
-            margin-top: 920px;
-            display: flex;
-        }
-
-        /*css for footbg*/
-        #footbg {
-            z-index: 1;
-            position: absolute;
-            margin-top: 800px;
-            width: 105%;
-            height: 450px;
-            margin-left: 90px;
-        }
-
-        /*css for feature div*/
-        #feature {
-            margin-left: 30px;
-        }
-
-        /*css for learning div*/
-        #learning {
-            margin-left: 30px;
-        }
-
-        /*css for support div*/
-        #support {
-            margin-left: 30px;
-        }
-
-        /* css for base foot*/
-        #basefoot {
-            background-color: #1d232e;
-            height: 50px;
-            z-index: 1;
-            position: absolute;
-            margin-top: 1200px;
-            width: 1340px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <!--navbar -->
-    <div id="con" style="background-color:#fff9f3;position: absolute;width:100%;">
-        <img src="psdlayers/Logo.png" style="margin-left:215px;margin-top:20px;height:50px;width:50px;  ">
+    <!--container id contains header section of page -->
+    <div id="container" style="background-color:#fff9f3;position: absolute;width:100%;">
+        <img src="psdlayers/Logo.png" style="margin-left:215px;margin-top:20px;height:55px;width:55px;">
 
         <!--horizontal navigation bar-->
         <div class="navbar" style="float: right;">
@@ -324,6 +50,8 @@
                 </li>
             </ul>
         </div>
+
+        <!--heading div that contains inno,our,visit,rl id level selectors-->
         <div class="heading" style="height: 513px;">
             <pre id="inno">
             Innovation for education
@@ -378,16 +106,18 @@
         </div>
     </div>
     <div style="margin-top:1330px;position: absolute;">
+
         <!--Outer Half transparent circle at left-->
         <img class="outercircle" src="psdlayers/bg shape (1).png">
 
         <!--image on the outerircle with play button-->
         <img id="fort" style="height: 340px;width: 440px;" src="psdlayers/fort.png">
 
+        <!--limitcontainer that contains content on right of outercircle-->
         <div class="limitcontainer">
             <pre id="limitless">Limitless learning, more 
 possibilities</pre>
-            <pre style="color: #5a6e79;font-family: 'Work Sans'">
+            <pre style="color: #5a6e79;font-family:'Work Sans';font-weight: bold;">
 The University of Rochester is one of the country's top-tier 
 research universities. Our campuses are home to 200 
 academic majors, more than 2,000 faculty and instructional 
@@ -399,6 +129,7 @@ scale. Rochester remains one of the smallest and most collegiate
 among top research universities, with smaller classes, a low 10:1 
 student to teacher ratio, and increased interactions with faculty.
 </pre>
+
             <div style="display: flex;">
                 <img style="margin-top:30px;height: 40px;width:90px;" src="psdlayers/4000 Students.png">
                 <img style="margin-left:100px;margin-top:30px;height: 40px;width:50px;" src="psdlayers/260 Courses.png">
@@ -407,7 +138,7 @@ student to teacher ratio, and increased interactions with faculty.
             </div>
         </div>
 
-        <!--span tag with heading-->
+        <!--span tag with uni id for heading-->
         <span id="uni" style="color:#252c3a;"> Around the University</span>
 
         <!--half-circle background in rightside-->
@@ -415,6 +146,7 @@ student to teacher ratio, and increased interactions with faculty.
 
         <!--div containing cards row1-->
         <div style="display: flex; margin-top:200px;margin-left:180px;z-index: 1;position:absolute;">
+
             <!--card1-->
             <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;">
                 <img style="height:154px;" src="psdlayers/grapic card.png" class="card-img-top">
@@ -425,6 +157,7 @@ student to teacher ratio, and increased interactions with faculty.
                     <h6 class="card-text">Keep reading...</h6>
                 </div>
             </div>
+
             <!--card2-->
             <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
                 <img src="psdlayers/cardpic2.png" class="card-img-top">
@@ -435,6 +168,7 @@ student to teacher ratio, and increased interactions with faculty.
                     <h6 id="keep234" class="card-text">Keep reading...</h6>
                 </div>
             </div>
+
             <!--card3-->
             <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
                 <img src="psdlayers/cardpic3.png" class="card-img-top">
@@ -445,9 +179,10 @@ student to teacher ratio, and increased interactions with faculty.
                     <h6 id="keep234" class="card-text">Keep reading...</h6>
                 </div>
             </div>
+
             <!--card4-->
             <div class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="psdlayers/cardpic4.png" class="card-img-top">
+                <img style="height:157px;" src="psdlayers/cardpic4.png" class="card-img-top">
                 <div class="card-body">
                     <h6 class="card234" class="card-title">A Beginner’s Guide to the
                         New Bootstrap 4 Grid</h6>
@@ -459,6 +194,7 @@ student to teacher ratio, and increased interactions with faculty.
 
         <!--div containing cards row2-->
         <div style="display: flex; position:absolute;margin-top: 520px;margin-left:165px;">
+
             <!--card1-->
             <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
                 <img src="psdlayers/rc1.png" class="card-img-top">
@@ -469,6 +205,7 @@ student to teacher ratio, and increased interactions with faculty.
                     <h6 id="keep234" class="card-text">Keep reading...</h6>
                 </div>
             </div>
+
             <!--card2-->
             <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
                 <img src="psdlayers/rc2.png" class="card-img-top">
@@ -479,6 +216,7 @@ student to teacher ratio, and increased interactions with faculty.
                     <h6 id="keep234" class="card-text">Keep reading...</h6>
                 </div>
             </div>
+
             <!--card3-->
             <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
                 <img src="psdlayers/rc3.png" class="card-img-top">
@@ -489,9 +227,10 @@ student to teacher ratio, and increased interactions with faculty.
                     <h6 id="keep234" class="card-text">Keep reading...</h6>
                 </div>
             </div>
+
             <!--card4-->
             <div class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="psdlayers/rc4.png" class="card-img-top">
+                <img style="height:157px;"src="psdlayers/rc4.png" class="card-img-top">
                 <div class="card-body">
                     <h6 class="card234" class="card-title">Modern PHP From The
                         Beginning</h6>
@@ -500,10 +239,12 @@ student to teacher ratio, and increased interactions with faculty.
                 </div>
             </div>
         </div>
+
         <!--bg for footer-->
         <div>
             <img id="footbg" src="psdlayers/hat.png">
         </div>
+
         <!--footer-->
         <div class="footer">
             <!--edmo div-->
@@ -512,16 +253,19 @@ student to teacher ratio, and increased interactions with faculty.
                 <img style="margin-top:50px;float: left;top:0;left:0;" src="psdlayers/logoes.png">
                 <img style="position: absolute;top: 180px; left: 145px;" src="psdlayers/line.png">
             </div>
+
             <!--feature div-->
             <div id="feature">
                 <p style="color: #ffffff;margin-top:50px;font-family:'Roboto';"> FEATURED PROGRAMS</p>
                 <img src="psdlayers/fixed.png">
             </div>
+
             <!--learning div-->
             <div id="learning">
                 <p style="color: #ffffff;margin-top:50px;font-family:'Roboto';">Learning</p>
                 <img src="psdlayers/plan.png">
             </div>
+
             <!--support div-->
             <div id="support">
                 <p style="color: #ffffff;margin-top:50px;font-family:'Roboto';">Support Forum</p>
@@ -531,6 +275,7 @@ quick support forum.
                 <img src="psdlayers/Form.png">
             </div>
         </div>
+
         <!--basefoot-->
         <div id="basefoot">
             <img src="psdlayers/Copyright.png" style="float: left;margin-top: 20px;margin-left:200px;">

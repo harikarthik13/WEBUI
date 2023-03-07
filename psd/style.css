@@ -1,0 +1,276 @@
+/*css for index.html*/
+
+/*css fo horizontal navigation bar*/
+.navbar {
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+#apply {
+    color: #ffc480;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #cacaca;
+}
+
+/*css for id study with underline*/
+#study {
+    color: #ffc178;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+
+}
+/*for underline*/
+#study:after {
+    content: '';
+    height: 2px;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background: #ffc480;
+    position: absolute;
+
+}
+
+/* css for div with heading class level selector*/
+.heading {
+    margin-top: 100px;
+    margin-left: 115px;
+    margin-right: 78px;
+    position: relative;
+
+}
+
+/*background image for the div with heading class level selector*/
+.heading::before {
+    content: '';
+    inset: 0px;
+    background-image: url(psdlayers/man.png);
+    z-index: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*css for id selectors inno,our,visit inside heading class*/
+#inno {
+    position: absolute;
+    font-weight: bold;
+    font-style: solid;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #f0ae62;
+    margin-top: 50px;
+}
+
+#our {
+    position: absolute;
+    font-size: small;
+    color: #5a6e79;
+    margin-left: 45px;
+    font-family: "Work Sans";
+    font-weight:bolder;
+    margin-top: 160px;
+}
+
+#visit {
+    position: absolute;
+    margin-top: 220px;
+    color: #ffffff;
+    background-color: #f0ae62;
+    border-radius: 20px;
+    width: fit-content;
+    margin-left: 100px;
+
+}
+
+/* left leaf css */
+#ll {
+    height: 180px;
+    width: 180px;
+    z-index: 1;
+    margin-left: 25px;
+    margin-top: 460px;
+    position: absolute;
+
+}
+
+/* Right leaf css */
+#rl {
+
+    height: 170px;
+    width: 110px;
+    z-index: 1;
+    position: relative;
+
+}
+
+/* curve design under heading class */
+#curveimage {
+    height: 150px;
+    width: 105%;
+    margin-top: 690px;
+    position: absolute;
+    transform: translate(-5%);
+
+}
+
+#hundered {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 850px;
+    text-align: center;
+    color: #5a6e79;
+    font-family: "Work Sans";
+    font-weight: bold;
+}
+
+/* css of cards class level selctor contains all the child cards */
+.cards {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-top: 950px;
+
+}
+
+/* css for outer transparent circle in left side */
+.outercircle {
+    fill: #fcf0e3;
+    transform: translate(-35%, -65%);
+    margin-top: 367px;
+    z-index: 0;
+    position: absolute;
+    height: 770px;
+    width: 690px;
+
+}
+
+/* css for image on the outerircle with play button */
+#fort {
+    position: absolute;
+    z-index: 1;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.limitcontainer {
+    margin-left: 620px;
+}
+
+/* css for content tht starts with limitless  */
+#limitless {
+    color: #252c3a;
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+/* css for halfcircle bg in right side */
+.halfcircle {
+    margin-left: 905px;
+    z-index: 0;
+    position: absolute;
+    width: 440px;
+}
+
+/* css for span tag with heading */
+#uni {
+    position: absolute;
+    font-size: xx-large;
+    margin-top: 60px;
+    margin-left: 500px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
+
+/* css for cards in row 1 */
+.firstrowcard {
+    box-shadow: 10px 10px 25px rgb(185, 185, 185);
+}
+
+/* css for the contents in card1 */
+#card1h6 {
+    font-size: smaller;
+    color: #ffc178;
+    text-decoration: underline;
+    font-family: "Work Sans";
+}
+
+#card1para {
+    font-size: smaller;
+    font-family: 'Roboto';
+    color: #5a6e79;
+}
+
+/* css for h6 in card2,crd3,card4 with card234 id*/
+.card234 {
+    font-size: smaller;
+    color: #252c3a;
+    font-weight: 600;
+    font-family: "Work Sans";
+}
+
+/* css for p in card2,crd3,card4 */
+#cp234 {
+    font-size: smaller;
+    font-family: 'Roboto';
+    color: #5a6e79;
+}
+
+/* css for h6 in card2,crd3,card4 with keep234 id*/
+#keep234 {
+    color: #5a6e79;
+}
+
+/*css for footer*/
+.footer {
+    width: 1340px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    background-color: #252c3a;
+    margin-top: 920px;
+    display: flex;
+}
+
+/*css for footbg*/
+#footbg {
+    z-index: 1;
+    position: absolute;
+    margin-top: 800px;
+    width: 105%;
+    height: 450px;
+    margin-left: 90px;
+}
+
+/*css for feature div*/
+#feature {
+    margin-left: 30px;
+}
+
+/*css for learning div*/
+#learning {
+    margin-left: 30px;
+}
+
+/*css for support div*/
+#support {
+    margin-left: 30px;
+}
+
+/* css for base foot*/
+#basefoot {
+    background-color: #1d232e;
+    height: 50px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 1200px;
+    width: 1340px;
+
+}
