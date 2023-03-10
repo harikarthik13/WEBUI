@@ -21,6 +21,7 @@
     position: relative;
 
 }
+
 /*for underline*/
 #study:after {
     content: '';
@@ -48,7 +49,7 @@
 .heading::before {
     content: '';
     inset: 0px;
-    background-image: url(psdlayers/man.png);
+    background-image: url(assets/man.png);
     z-index: 0;
     position: absolute;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@
     color: #5a6e79;
     margin-left: 45px;
     font-family: "Work Sans";
-    font-weight:bolder;
+    font-weight: bolder;
     margin-top: 160px;
 }
 
@@ -90,10 +91,10 @@
 
 /* left leaf css */
 #ll {
-    height: 180px;
-    width: 180px;
+    height: 160px;
+    width: 160px;
     z-index: 1;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-top: 460px;
     position: absolute;
 
@@ -251,17 +252,43 @@
 
 /*css for feature div*/
 #feature {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 /*css for learning div*/
 #learning {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 /*css for support div*/
 #support {
-    margin-left: 30px;
+    margin-left: 40px;
+}
+
+/* css for input type with id mail */
+#mail {
+    position: absolute;
+    width: 205px;
+    font-family: "Open Sans";
+    color: #969595;
+    width: 205px;
+    height: 30px;
+    font-size:12px;
+    border:none;
+    outline: 0px;
+}
+
+/* css for the help button */
+#helpbut {
+    font-size: small;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffc178;
+    padding: 5px;
+    margin-bottom: -1px;
+    margin-left: 145px;
+    border-width: 0px;
 }
 
 /* css for base foot*/
