@@ -5,8 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#validationform").validate({
+                rules: {
+                    'un': {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 20
+                    },
+                    'pw': {
+                        required: true,
+                    },
+                    'mail': {
+                        required: true,
+                        email: true,
+                    },
+                    'mob': {
+                        required: true,
+                        
+                    },
+                },
+                messages: {
+                    'un': "Please enter a valid User Name.",
+                    'pw': "Please enter a Password",
+                    'mail': "Please enter Email in proper format.",
+                    'mob': "Please enter mobile number",
+                    
+                }
+            });
+        });
+    </script>
+   <style>
+     
+        form{
+            
+            position:absolute;
+            border-radius:25px;
+            z-index:1;
+            width:30%;
+            height: 280px;
+            text-align: center;
+            top:200px;
+          margin-left:450px;
+        }
+        label{
+          font-size: larger;
+          font-weight: bold;
+        }
+        form .error {
+            color: #ff0001;
+        }
+    </style>
+   
 </head>
+
 <body>
-    
+    <form action=""  method="post" id="validationform">
+        <fieldset style="border-radius:10px;">
+            <legend style="text-align: center; font-size: xx-large; font-weight: bolder;color:brown">Validation Form</legend>
+            <label>User Name :</label>
+            <input type="text" name="un" placeholder=" enter username">
+            <br><br>
+            <label>Password :</label>
+            <input type="password" name="pw" placeholder="enter  password">
+            <br><br>
+            <label> E-Mail :</label>
+            <input type="email" name="mail" placeholder="enter email id">
+            <br><br>
+            <label> Mobile :</label>
+            <input type="tel" name="mob" placeholder="enter mobile number">
+            <br><br>
+            <input type="submit"  value="Sign In">
+            <input type="reset" value="Cancel" class="button">
+        </fieldset>
+    </form>
 </body>
 </html>
