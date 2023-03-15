@@ -14,10 +14,12 @@
                     'un': {
                         required: true,
                         minlength: 2,
-                        maxlength: 20
+                        maxlength: 20,
+                        pattern: /^[a-zA-Z]+$/
                     },
                     'pw': {
                         required: true,
+                        pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$#])[A-Za-z\d@$#]{8,16}$/
                     },
                     'mail': {
                         required: true,
@@ -25,14 +27,17 @@
                     },
                     'mob': {
                         required: true,
+                         pattern: /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/
                         
                     },
                 },
                 messages: {
-                    'un': "Please enter a valid User Name.",
-                    'pw': "Please enter a Password",
-                    'mail': "Please enter Email in proper format.",
-                    'mob': "Please enter mobile number",
+                    'un':{required:"<br>"+"please enter username",
+                      pattern:"<br>"+"Please enter a valid User Name."
+                    },
+                    'pw': "<br>"+"Please enter a Password",
+                    'mail': "<br>"+"Please enter Valid Email ID ",
+                    'mob':"<br>"+ "Please enter mobile number",
                     
                 }
             });
@@ -57,6 +62,8 @@
         }
         form .error {
             color: #ff0001;
+            font-size: medium;
+            margin-top: 10px;
         }
     </style>
    
